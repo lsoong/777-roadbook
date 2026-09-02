@@ -190,6 +190,31 @@ section.day{scroll-margin-top:62px; margin-bottom:34px}
   .stat{text-align:left}
 }
 
+/* 하루 경로 스트립 */
+.route1{
+  margin-top:14px; border:1px solid var(--line); border-radius:var(--r);
+  background:var(--surface); padding:13px 14px;
+}
+.route1-h{
+  display:flex; align-items:center; gap:9px; flex-wrap:wrap; margin-bottom:9px;
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3);
+}
+.route1-h .grow{flex:1}
+.route1-pts{display:flex; flex-wrap:wrap; align-items:center; gap:5px 7px; font-size:13.5px; line-height:1.5}
+.route1-pts .pt{padding:2px 8px; border-radius:6px; background:var(--surface-2); border:1px solid var(--line)}
+.route1-pts .pt.end{background:var(--route-soft); border-color:var(--route-line); color:var(--route); font-weight:700}
+.route1-pts .pt.gas{background:color-mix(in srgb,#B4642A 12%, var(--surface)); border-color:color-mix(in srgb,#B4642A 40%, var(--line))}
+.route1-pts .arw{color:var(--ink-3); font-size:11px}
+.route1-note{margin-top:10px; font-size:12.5px; color:var(--ink-3)}
+.btn-sm{
+  font-family:var(--f-body); font-size:12px; font-weight:700; cursor:pointer; white-space:nowrap;
+  padding:5px 11px; border-radius:7px; border:1px solid var(--route); background:var(--route); color:#fff;
+}
+.btn-sm.ghost{background:transparent; color:var(--route)}
+.btn-sm:hover{filter:brightness(1.08)}
+.btn-sm:focus-visible{outline:2px solid var(--route); outline-offset:2px}
+.copied{font-family:var(--f-mono); font-size:11px; color:var(--go)}
+
 /* leg (timeline) */
 .leg{margin-top:16px}
 .leg-h{
@@ -438,6 +463,15 @@ footer a{color:var(--ink-2)}
       </div>
     </div>
 
+        <div class="route1" data-route="화성시청&#10;궁평항&#10;왜목마을&#10;서산시청&#10;안면도 꽃지해수욕장&#10;대천해수욕장&#10;군산시청">
+      <div class="route1-h"><span>하루 경로 — 출발 · 경유 5 · 도착</span><span class="grow"></span>
+        <button type="button" class="btn-sm rcopy">경유지 복사</button>
+        <a class="btn-sm ghost" href="https://map.naver.com/p/directions" target="_blank" rel="noopener">네이버 지도 열기</a>
+        <span class="copied"></span>
+      </div>
+      <div class="route1-pts"><span class="pt end">화성시청</span><span class="arw">→</span><span class="pt">궁평항</span><span class="arw">→</span><span class="pt">왜목마을</span><span class="arw">→</span><span class="pt gas">⛽ 서산시청</span><span class="arw">→</span><span class="pt">안면도 꽃지해수욕장</span><span class="arw">→</span><span class="pt">대천해수욕장</span><span class="arw">→</span><span class="pt end">군산시청</span></div>
+      <p class="route1-note">네이버 지도 길찾기에서 <b>출발 → 경유지 추가 → 도착</b> 순으로 붙여넣으면 하루 동선이 한 번에 잡힌다. 경유지는 네이버 기준 <b>최대 5개</b>라 주유 만탱크 지점과 경치 구간만 넣었다.</p>
+    </div>
     <div class="leg">
       <div class="leg-h"><span class="dot"></span>주행 — 77번 국도 서해안</div>
       <ol class="stops">
@@ -505,6 +539,15 @@ footer a{color:var(--ink-2)}
       </div>
     </div>
 
+        <div class="route1" data-route="군산시청&#10;새만금방조제&#10;채석강&#10;백수해안도로&#10;목포시청&#10;땅끝전망대&#10;완도항">
+      <div class="route1-h"><span>하루 경로 — 출발 · 경유 5 · 도착</span><span class="grow"></span>
+        <button type="button" class="btn-sm rcopy">경유지 복사</button>
+        <a class="btn-sm ghost" href="https://map.naver.com/p/directions" target="_blank" rel="noopener">네이버 지도 열기</a>
+        <span class="copied"></span>
+      </div>
+      <div class="route1-pts"><span class="pt end">군산시청</span><span class="arw">→</span><span class="pt">새만금방조제</span><span class="arw">→</span><span class="pt">채석강</span><span class="arw">→</span><span class="pt">백수해안도로</span><span class="arw">→</span><span class="pt gas">⛽ 목포시청</span><span class="arw">→</span><span class="pt">땅끝전망대</span><span class="arw">→</span><span class="pt end">완도항</span></div>
+      <p class="route1-note">네이버 지도 길찾기에서 <b>출발 → 경유지 추가 → 도착</b> 순으로 붙여넣으면 하루 동선이 한 번에 잡힌다. 경유지는 네이버 기준 <b>최대 5개</b>라 주유 만탱크 지점과 경치 구간만 넣었다.</p>
+    </div>
     <div class="leg">
       <div class="leg-h"><span class="dot"></span>주행 — 가장 긴 날</div>
       <ol class="stops">
@@ -567,6 +610,15 @@ footer a{color:var(--ink-2)}
       </div>
     </div>
 
+        <div class="route1" data-route="완도항&#10;신지명사십리해수욕장&#10;보성 대한다원&#10;벌교읍&#10;팔영대교&#10;돌산대교&#10;여수 이순신광장">
+      <div class="route1-h"><span>하루 경로 — 출발 · 경유 5 · 도착</span><span class="grow"></span>
+        <button type="button" class="btn-sm rcopy">경유지 복사</button>
+        <a class="btn-sm ghost" href="https://map.naver.com/p/directions" target="_blank" rel="noopener">네이버 지도 열기</a>
+        <span class="copied"></span>
+      </div>
+      <div class="route1-pts"><span class="pt end">완도항</span><span class="arw">→</span><span class="pt">신지명사십리해수욕장</span><span class="arw">→</span><span class="pt">보성 대한다원</span><span class="arw">→</span><span class="pt gas">⛽ 벌교읍</span><span class="arw">→</span><span class="pt">팔영대교</span><span class="arw">→</span><span class="pt">돌산대교</span><span class="arw">→</span><span class="pt end">여수 이순신광장</span></div>
+      <p class="route1-note">네이버 지도 길찾기에서 <b>출발 → 경유지 추가 → 도착</b> 순으로 붙여넣으면 하루 동선이 한 번에 잡힌다. 경유지는 네이버 기준 <b>최대 5개</b>라 주유 만탱크 지점과 경치 구간만 넣었다.</p>
+    </div>
     <div class="leg">
       <div class="leg-h"><span class="dot"></span>주행 — 여유 있는 날</div>
       <ol class="stops">
@@ -632,6 +684,15 @@ footer a{color:var(--ink-2)}
       </div>
     </div>
 
+        <div class="route1" data-route="여수 이순신광장&#10;노량대교&#10;남해 독일마을&#10;창선삼천포대교&#10;통영 달아공원&#10;창원시청&#10;광안리해수욕장">
+      <div class="route1-h"><span>하루 경로 — 출발 · 경유 5 · 도착</span><span class="grow"></span>
+        <button type="button" class="btn-sm rcopy">경유지 복사</button>
+        <a class="btn-sm ghost" href="https://map.naver.com/p/directions" target="_blank" rel="noopener">네이버 지도 열기</a>
+        <span class="copied"></span>
+      </div>
+      <div class="route1-pts"><span class="pt end">여수 이순신광장</span><span class="arw">→</span><span class="pt">노량대교</span><span class="arw">→</span><span class="pt">남해 독일마을</span><span class="arw">→</span><span class="pt">창선삼천포대교</span><span class="arw">→</span><span class="pt">통영 달아공원</span><span class="arw">→</span><span class="pt gas">⛽ 창원시청</span><span class="arw">→</span><span class="pt end">광안리해수욕장</span></div>
+      <p class="route1-note">네이버 지도 길찾기에서 <b>출발 → 경유지 추가 → 도착</b> 순으로 붙여넣으면 하루 동선이 한 번에 잡힌다. 경유지는 네이버 기준 <b>최대 5개</b>라 주유 만탱크 지점과 경치 구간만 넣었다.</p>
+    </div>
     <div class="leg">
       <div class="leg-h"><span class="dot"></span>주행 — 우회가 두 번 있는 날</div>
       <ol class="stops">
@@ -702,6 +763,15 @@ footer a{color:var(--ink-2)}
       </div>
     </div>
 
+        <div class="route1" data-route="광안리해수욕장&#10;문무대왕릉&#10;호미곶&#10;포항 죽도시장&#10;영덕 강구항&#10;죽변항&#10;묵호항">
+      <div class="route1-h"><span>하루 경로 — 출발 · 경유 5 · 도착</span><span class="grow"></span>
+        <button type="button" class="btn-sm rcopy">경유지 복사</button>
+        <a class="btn-sm ghost" href="https://map.naver.com/p/directions" target="_blank" rel="noopener">네이버 지도 열기</a>
+        <span class="copied"></span>
+      </div>
+      <div class="route1-pts"><span class="pt end">광안리해수욕장</span><span class="arw">→</span><span class="pt">문무대왕릉</span><span class="arw">→</span><span class="pt">호미곶</span><span class="arw">→</span><span class="pt gas">⛽ 포항 죽도시장</span><span class="arw">→</span><span class="pt">영덕 강구항</span><span class="arw">→</span><span class="pt">죽변항</span><span class="arw">→</span><span class="pt end">묵호항</span></div>
+      <p class="route1-note">네이버 지도 길찾기에서 <b>출발 → 경유지 추가 → 도착</b> 순으로 붙여넣으면 하루 동선이 한 번에 잡힌다. 경유지는 네이버 기준 <b>최대 5개</b>라 주유 만탱크 지점과 경치 구간만 넣었다.</p>
+    </div>
     <div class="leg">
       <div class="leg-h"><span class="dot"></span>주행 — 최장거리, 도심 정체 피하려면 일찍</div>
       <ol class="stops">
@@ -772,6 +842,15 @@ footer a{color:var(--ink-2)}
 
     <p class="stop-d" style="margin:14px 0 0;padding:11px 13px;border:1px solid var(--stop);border-radius:10px;background:var(--stop-soft)"><b>귀가까지 하루에 끝내는 날이라 물리적으로 가장 길다.</b> 고성 대진항까지 170km, 거기서 화성까지 국도로 280km. <b>오토바이는 고속도로를 못 타니 서울양양고속은 선택지가 아니다</b> — 44·46번국도로 내려와야 하고, 그만큼 시간이 든다. 06:30에 나서야 해 지기 전에 들어온다.</p>
 
+        <div class="route1" data-route="묵호항&#10;추암 촛대바위&#10;정동진역&#10;속초 대포항&#10;고성 대진항&#10;홍천군청&#10;화성시청">
+      <div class="route1-h"><span>하루 경로 — 출발 · 경유 5 · 도착</span><span class="grow"></span>
+        <button type="button" class="btn-sm rcopy">경유지 복사</button>
+        <a class="btn-sm ghost" href="https://map.naver.com/p/directions" target="_blank" rel="noopener">네이버 지도 열기</a>
+        <span class="copied"></span>
+      </div>
+      <div class="route1-pts"><span class="pt end">묵호항</span><span class="arw">→</span><span class="pt">추암 촛대바위</span><span class="arw">→</span><span class="pt">정동진역</span><span class="arw">→</span><span class="pt">속초 대포항</span><span class="arw">→</span><span class="pt gas">⛽ 고성 대진항</span><span class="arw">→</span><span class="pt">홍천군청</span><span class="arw">→</span><span class="pt end">화성시청</span></div>
+      <p class="route1-note">네이버 지도 길찾기에서 <b>출발 → 경유지 추가 → 도착</b> 순으로 붙여넣으면 하루 동선이 한 번에 잡힌다. 경유지는 네이버 기준 <b>최대 5개</b>라 주유 만탱크 지점과 경치 구간만 넣었다.</p>
+    </div>
     <div class="leg">
       <div class="leg-h"><span class="dot"></span>오전 — 북쪽 종점 찍기</div>
       <ol class="stops">
@@ -856,6 +935,16 @@ footer a{color:var(--ink-2)}
             <tr><td>예비비</td><td class="note">정비·비상</td><td>100,000</td></tr>
             <tr class="total"><td>합계</td><td class="note"></td><td>991,000</td></tr>
           </table>
+        </div>
+
+        <div class="panel">
+          <h3>내비게이션</h3>
+          <p class="hint">지도앱마다 역할이 다르다</p>
+          <ul class="checklist">
+            <li><span class="txt"><b>실제 주행은 티맵을 이륜차 모드로.</b> 네이버 지도에는 이륜차 경로가 없어 자동차 기준으로 안내한다 — 거가대교·이순신대교·광안대교 같은 <b>이륜차 금지 구간을 그대로 태운다</b></span></li>
+            <li><span class="txt"><b>네이버 지도는 하루 동선 확인용.</b> 각 일자의 “하루 경로”에서 경유지를 복사해 붙여넣으면 전체 그림이 한 번에 보인다</span></li>
+            <li><span class="txt">개별 맛집·숙소·주유소는 각 항목의 지도 핀으로</span></li>
+          </ul>
         </div>
 
         <div class="panel">
@@ -1053,6 +1142,31 @@ footer a{color:var(--ink-2)}
     if(!ta || applying) return;
     state.notes[ta.dataset.note] = ta.value;
     save();
+  });
+
+  /* ── 하루 경로 복사 ── */
+  document.addEventListener('click', function(e){
+    var b = e.target.closest('.rcopy');
+    if(!b) return;
+    var box = b.closest('.route1');
+    var text = (box.getAttribute('data-route') || '').replace(/\r/g, '');
+    var msg = box.querySelector('.copied');
+    function done(ok){
+      if(!msg) return;
+      msg.textContent = ok ? '복사됨 — 지도에 붙여넣기' : '복사 실패';
+      msg.style.color = ok ? 'var(--go)' : 'var(--stop)';
+      setTimeout(function(){ msg.textContent = ''; }, 2600);
+    }
+    function fallback(){
+      var t = document.createElement('textarea');
+      t.value = text; t.style.position = 'fixed'; t.style.opacity = '0';
+      document.body.appendChild(t); t.select();
+      try { document.execCommand('copy'); done(true); } catch(err){ done(false); }
+      document.body.removeChild(t);
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){ done(true); }, fallback);
+    } else fallback();
   });
 
   /* ── nav highlight ── */
