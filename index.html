@@ -1,0 +1,1044 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>777 해안일주 로드북</title>
+<meta name="description" content="2026.09.18-23 국도 7·77호선 해안 일주 오토바이 투어 로드북. 화성 원점 5박6일 2,150km.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="777 해안일주 로드북">
+<meta property="og:description" content="화성 원점 5박6일, 2,150km. 일자별 코스·숙소·맛집·술자리.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%8D%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<style>*{box-sizing:border-box}html,body{margin:0;padding:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=Gothic+A1:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --ground:#EFEEE9; --surface:#FFFFFF; --surface-2:#F7F6F2; --line:#DCDAD3; --line-2:#C9C6BD;
+  --ink:#15191E; --ink-2:#4A535D; --ink-3:#7E8892;
+  --route:#0B4EA2; --route-soft:#E5EDF9; --route-line:#B9CFEC;
+  --stop:#BE332B; --stop-soft:#FAE9E6;
+  --go:#1C7248; --go-soft:#E3F0E9;
+  --shadow:0 1px 2px rgba(20,25,32,.06), 0 6px 20px rgba(20,25,32,.05);
+  --r:10px;
+  --f-disp:'Archivo','Gothic A1',system-ui,sans-serif;
+  --f-body:'Gothic A1',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,'SFMono-Regular',monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0E1216; --surface:#161B21; --surface-2:#1B2129; --line:#28303A; --line-2:#39434F;
+    --ink:#E8EBEE; --ink-2:#A7B1BB; --ink-3:#78838E;
+    --route:#6DA8EF; --route-soft:#13253C; --route-line:#2E4A6E;
+    --stop:#EF8C82; --stop-soft:#331A18;
+    --go:#6CC89B; --go-soft:#122A20;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 6px 20px rgba(0,0,0,.28);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0E1216; --surface:#161B21; --surface-2:#1B2129; --line:#28303A; --line-2:#39434F;
+  --ink:#E8EBEE; --ink-2:#A7B1BB; --ink-3:#78838E;
+  --route:#6DA8EF; --route-soft:#13253C; --route-line:#2E4A6E;
+  --stop:#EF8C82; --stop-soft:#331A18;
+  --go:#6CC89B; --go-soft:#122A20;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 6px 20px rgba(0,0,0,.28);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--f-body); font-size:15px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--route)}
+h1,h2,h3,h4{margin:0; text-wrap:balance; font-family:var(--f-disp); font-weight:700}
+p{margin:0}
+ul,ol{margin:0; padding:0; list-style:none}
+.mono{font-family:var(--f-mono); font-variant-numeric:tabular-nums}
+.wrap{max-width:1120px; margin:0 auto; padding:0 20px}
+
+/* ───── shield motif ───── */
+.shield{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:34px; height:38px; flex:none;
+  background:var(--route); color:#fff;
+  clip-path:polygon(50% 0,100% 16%,100% 72%,50% 100%,0 72%,0 16%);
+  font-family:var(--f-disp); font-weight:800; font-size:15px;
+  font-variation-settings:'wdth' 110; letter-spacing:-.02em;
+}
+.shield.sm{width:26px;height:29px;font-size:11.5px}
+
+/* ───── masthead ───── */
+header.top{
+  background:var(--surface); border-bottom:1px solid var(--line);
+  padding:34px 0 26px;
+}
+.mast{display:flex; gap:18px; align-items:flex-start; flex-wrap:wrap}
+.mast-shields{display:flex; gap:5px; padding-top:5px}
+.eyebrow{
+  font-family:var(--f-mono); font-size:11px; font-weight:600; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--ink-3); margin-bottom:6px;
+}
+h1{
+  font-size:clamp(30px,5.2vw,46px); line-height:1.06; letter-spacing:-.025em;
+  font-weight:900; font-variation-settings:'wdth' 108;
+}
+h1 .thin{font-weight:400; color:var(--ink-2); font-variation-settings:'wdth' 100}
+.sub{color:var(--ink-2); margin-top:10px; max-width:60ch; font-size:14.5px}
+
+.facts{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(118px,1fr));
+  gap:1px; background:var(--line); border:1px solid var(--line);
+  border-radius:var(--r); overflow:hidden; margin-top:22px;
+}
+.fact{background:var(--surface); padding:12px 14px}
+.fact dt{font-size:10.5px; letter-spacing:.13em; text-transform:uppercase;
+  font-family:var(--f-mono); color:var(--ink-3); margin-bottom:3px}
+.fact dd{margin:0; font-family:var(--f-disp); font-weight:800; font-size:19px;
+  letter-spacing:-.01em; font-variant-numeric:tabular-nums}
+.fact dd small{font-size:12px; font-weight:600; color:var(--ink-2); margin-left:1px}
+
+/* ───── sticky day nav ───── */
+nav.days{
+  position:sticky; top:0; z-index:40;
+  background:color-mix(in srgb, var(--ground) 88%, transparent);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.days-in{display:flex; gap:6px; overflow-x:auto; padding:9px 20px; scrollbar-width:thin}
+.dchip{
+  flex:none; display:flex; gap:8px; align-items:baseline;
+  padding:6px 12px; border-radius:99px; border:1px solid var(--line);
+  background:var(--surface); color:var(--ink-2); text-decoration:none;
+  font-size:12.5px; white-space:nowrap; transition:.15s;
+}
+.dchip b{font-family:var(--f-disp); font-weight:800; color:var(--ink); font-size:12px}
+.dchip:hover{border-color:var(--route); color:var(--ink)}
+.dchip[aria-current="true"]{background:var(--route); border-color:var(--route); color:#fff}
+.dchip[aria-current="true"] b{color:#fff}
+
+/* ───── alert ───── */
+details.alert{
+  margin:22px 0 0; border:1px solid var(--stop); border-radius:var(--r);
+  background:var(--stop-soft); overflow:hidden;
+}
+details.alert>summary{
+  cursor:pointer; list-style:none; padding:13px 16px; font-weight:700;
+  display:flex; gap:10px; align-items:center; color:var(--stop); font-size:14.5px;
+}
+details.alert>summary::-webkit-details-marker{display:none}
+details.alert>summary::after{content:'▾'; margin-left:auto; transition:.2s; font-size:12px}
+details.alert[open]>summary::after{transform:rotate(180deg)}
+.alert-body{padding:0 16px 16px; color:var(--ink); font-size:13.5px}
+.alert-body table{width:100%; border-collapse:collapse; margin-top:4px}
+.alert-body th,.alert-body td{text-align:left; padding:7px 10px 7px 0; border-top:1px solid color-mix(in srgb,var(--stop) 28%, transparent); vertical-align:top}
+.alert-body th{font-weight:700; white-space:nowrap; width:1%; padding-right:18px}
+.alert-body tr:first-child th,.alert-body tr:first-child td{border-top:0}
+
+/* ───── layout ───── */
+main{padding:26px 0 70px}
+.grid{display:grid; grid-template-columns:1fr; gap:26px}
+@media (min-width:940px){ .grid{grid-template-columns:210px 1fr; gap:38px} }
+
+/* rail */
+.rail{display:none}
+@media (min-width:940px){
+  .rail{display:block; position:sticky; top:60px; align-self:start}
+}
+.rail-h{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--ink-3); margin-bottom:14px}
+.rail ol{position:relative; padding-left:22px}
+.rail ol::before{content:''; position:absolute; left:6px; top:8px; bottom:8px;
+  width:2px; background:var(--route-line); border-radius:2px}
+.rail li{position:relative; padding:0 0 20px}
+.rail li::before{
+  content:''; position:absolute; left:-19px; top:6px; width:12px; height:12px;
+  border-radius:50%; background:var(--surface); border:2.5px solid var(--route-line);
+}
+.rail li.done::before{background:var(--go); border-color:var(--go)}
+.rail a{display:block; text-decoration:none; color:var(--ink-2); font-size:13px; line-height:1.35}
+.rail a b{display:block; font-family:var(--f-disp); font-weight:800; color:var(--ink); font-size:13.5px}
+.rail a:hover b{color:var(--route)}
+.rail .km{font-family:var(--f-mono); font-size:11px; color:var(--ink-3)}
+
+/* ───── day card ───── */
+section.day{scroll-margin-top:62px; margin-bottom:34px}
+.day-head{
+  display:flex; gap:14px; align-items:flex-start;
+  padding-bottom:14px; border-bottom:2px solid var(--ink);
+}
+.daynum{
+  font-family:var(--f-disp); font-weight:900; font-size:40px; line-height:.86;
+  letter-spacing:-.04em; font-variation-settings:'wdth' 112; flex:none;
+  color:var(--route);
+}
+.daynum small{display:block; font-size:10px; letter-spacing:.16em; font-weight:700;
+  font-variation-settings:'wdth' 100; color:var(--ink-3); margin-bottom:3px}
+.day-meta{flex:1; min-width:0}
+.day-meta h2{font-size:21px; letter-spacing:-.015em; line-height:1.25}
+.day-route{color:var(--ink-2); font-size:13.5px; margin-top:3px}
+.day-stats{display:flex; gap:14px; flex:none; padding-top:5px; flex-wrap:wrap}
+.stat{text-align:right}
+.stat b{display:block; font-family:var(--f-mono); font-weight:600; font-size:15px}
+.stat span{font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-family:var(--f-mono)}
+@media (max-width:600px){
+  .day-head{flex-wrap:wrap}
+  .day-stats{width:100%; justify-content:flex-start; border-top:1px solid var(--line); padding-top:9px}
+  .stat{text-align:left}
+}
+
+/* leg (timeline) */
+.leg{margin-top:16px}
+.leg-h{
+  display:flex; align-items:center; gap:9px; margin:20px 0 9px;
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--ink-3);
+}
+.leg-h::after{content:''; flex:1; height:1px; background:var(--line)}
+.leg-h .dot{width:7px;height:7px;border-radius:50%;background:var(--route)}
+.leg-h.eat .dot{background:#C2761E}
+.leg-h.drink .dot{background:#7A4CA8}
+.leg-h.stay .dot{background:var(--go)}
+
+ol.stops{border:1px solid var(--line); border-radius:var(--r); background:var(--surface); overflow:hidden}
+li.stop{display:flex; gap:12px; padding:11px 13px; border-top:1px solid var(--line); align-items:flex-start}
+li.stop:first-child{border-top:0}
+li.stop:hover{background:var(--surface-2)}
+.time{font-family:var(--f-mono); font-size:12px; color:var(--ink-3); flex:none; width:44px; padding-top:2px; font-variant-numeric:tabular-nums}
+.stop-b{flex:1; min-width:0}
+.stop-n{font-weight:700; font-size:15px; letter-spacing:-.01em}
+.stop-d{color:var(--ink-2); font-size:13px; margin-top:1px}
+.stop-d .price{font-family:var(--f-mono); font-size:12.5px; color:var(--ink)}
+.warn{color:var(--stop); font-weight:500}
+
+.tag{
+  display:inline-block; font-family:var(--f-mono); font-size:10px; font-weight:600;
+  letter-spacing:.06em; padding:1.5px 6px; border-radius:4px; vertical-align:2px;
+  margin-left:7px; text-transform:uppercase;
+}
+.t-route{background:var(--route-soft); color:var(--route)}
+.t-view{background:var(--surface-2); color:var(--ink-2); border:1px solid var(--line)}
+.t-stop{background:var(--stop-soft); color:var(--stop)}
+
+/* naver button */
+.nv{
+  flex:none; align-self:center; text-decoration:none;
+  display:inline-flex; align-items:center; gap:5px;
+  font-size:11.5px; font-weight:700; padding:4.5px 9px 4.5px 7px;
+  border:1px solid var(--line-2); border-radius:6px; color:var(--ink-2);
+  background:var(--surface); white-space:nowrap; transition:.14s;
+}
+.nv svg{width:11px;height:14px;flex:none}
+.nv:hover{border-color:#03C75A; color:#03C75A; background:color-mix(in srgb,#03C75A 8%, var(--surface))}
+.nv:focus-visible{outline:2px solid var(--route); outline-offset:2px}
+
+/* pickable option rows */
+li.stop.pick{cursor:pointer}
+li.stop.pick.on{background:var(--route-soft)}
+li.stop.pick.on .stop-n::after{content:'선택'; font-family:var(--f-mono); font-size:9.5px;
+  background:var(--route); color:#fff; padding:1.5px 5px; border-radius:4px; margin-left:8px;
+  letter-spacing:.05em; vertical-align:2px}
+.radio{
+  flex:none; width:17px; height:17px; border-radius:50%; margin-top:3px;
+  border:2px solid var(--line-2); background:var(--surface); position:relative;
+}
+li.stop.pick.on .radio{border-color:var(--route)}
+li.stop.pick.on .radio::after{content:''; position:absolute; inset:2.5px; border-radius:50%; background:var(--route)}
+
+/* checkbox */
+.tick{flex:none; margin-top:2px; display:inline-flex; cursor:pointer}
+.tick input{position:absolute; opacity:0; width:0; height:0}
+.tick span{
+  width:17px; height:17px; border-radius:5px; border:2px solid var(--line-2);
+  background:var(--surface); display:block; position:relative; transition:.12s;
+}
+.tick input:checked+span{background:var(--go); border-color:var(--go)}
+.tick input:checked+span::after{
+  content:''; position:absolute; left:4.5px; top:1px; width:4px; height:9px;
+  border:solid #fff; border-width:0 2.2px 2.2px 0; transform:rotate(43deg);
+}
+.tick input:focus-visible+span{outline:2px solid var(--route); outline-offset:2px}
+li.checked .stop-n{text-decoration:line-through; color:var(--ink-3)}
+
+/* notes */
+.notebox{margin-top:14px}
+.notebox label{
+  display:block; font-family:var(--f-mono); font-size:10.5px; letter-spacing:.13em;
+  text-transform:uppercase; color:var(--ink-3); margin-bottom:6px;
+}
+textarea{
+  width:100%; min-height:62px; resize:vertical; padding:10px 12px;
+  border:1px solid var(--line); border-radius:var(--r); background:var(--surface);
+  color:var(--ink); font-family:var(--f-body); font-size:13.5px; line-height:1.55;
+}
+textarea:focus{outline:none; border-color:var(--route); box-shadow:0 0 0 3px var(--route-soft)}
+
+/* generic panel */
+.panel{border:1px solid var(--line); border-radius:var(--r); background:var(--surface); padding:18px 18px 16px; margin-bottom:20px}
+.panel h3{font-size:16px; letter-spacing:-.01em; margin-bottom:2px}
+.panel .hint{color:var(--ink-3); font-size:12.5px; margin-bottom:13px}
+table.money{width:100%; border-collapse:collapse; font-size:13.5px}
+table.money td{padding:7px 0; border-top:1px solid var(--line)}
+table.money tr:first-child td{border-top:0}
+table.money td:last-child{text-align:right; font-family:var(--f-mono); font-variant-numeric:tabular-nums}
+table.money td.note{color:var(--ink-3); font-size:12px; text-align:right; font-family:var(--f-mono)}
+table.money tr.total td{border-top:2px solid var(--ink); font-weight:700; padding-top:9px}
+table.money tr.total td:last-child{font-size:16px}
+
+ul.checklist li{display:flex; gap:10px; padding:7px 0; border-top:1px solid var(--line); align-items:flex-start}
+ul.checklist li:first-child{border-top:0}
+ul.checklist .txt{flex:1; font-size:13.5px}
+ul.checklist li.checked .txt{text-decoration:line-through; color:var(--ink-3)}
+
+.cols{display:grid; gap:20px; grid-template-columns:1fr}
+@media (min-width:720px){ .cols{grid-template-columns:1fr 1fr} }
+
+/* save chip */
+.savebar{
+  position:fixed; left:50%; transform:translateX(-50%); bottom:16px; z-index:60;
+  display:flex; align-items:center; gap:9px;
+  background:var(--ink); color:var(--ground); padding:7px 14px; border-radius:99px;
+  font-size:12px; font-family:var(--f-mono); box-shadow:var(--shadow);
+  opacity:0; pointer-events:none; transition:opacity .25s;
+}
+.savebar.show{opacity:1}
+.savebar .pulse{width:7px;height:7px;border-radius:50%;background:#6CC89B}
+.savebar.local .pulse{background:#E0A431}
+
+.ronote{
+  display:none; align-items:flex-start; gap:9px;
+  margin:14px 0 0; padding:11px 14px; font-size:13px;
+  border:1px dashed var(--line-2); border-radius:var(--r);
+  background:var(--surface-2); color:var(--ink-2);
+}
+.ronote.show{display:flex}
+.ronote b{color:var(--ink)}
+
+.syncrow{display:flex; gap:9px; align-items:center; flex-wrap:wrap}
+.btn{
+  font-family:var(--f-body); font-size:13px; font-weight:700; cursor:pointer;
+  padding:8px 15px; border-radius:8px; border:1px solid var(--route);
+  background:var(--route); color:#fff; transition:.14s;
+}
+.btn.ghost{background:transparent; color:var(--route)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible{outline:2px solid var(--route); outline-offset:2px}
+.syncmsg{font-family:var(--f-mono); font-size:12px; color:var(--go)}
+
+footer{border-top:1px solid var(--line); padding:22px 0 40px; color:var(--ink-3); font-size:12px}
+footer a{color:var(--ink-2)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="mast">
+      <div class="mast-shields">
+        <span class="shield">7</span><span class="shield">77</span>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <div class="eyebrow">2026.09.18 FRI — 09.23 WED · 5박 6일</div>
+        <h1>777 해안일주 <span class="thin">로드북</span></h1>
+        <p class="sub">국도 7호선(동해안)과 77호선(서·남해안)을 이어 한반도 해안선을 한 바퀴. 화성에서 출발해 화성으로 돌아오는 원점 회귀. 매일 밤은 걸어서 갈 수 있는 술자리로 끝난다.</p>
+      </div>
+    </div>
+    <dl class="facts">
+      <div class="fact"><dt>Total</dt><dd>2,150<small>km</small></dd></div>
+      <div class="fact"><dt>Days</dt><dd>6<small>일 · 5박</small></dd></div>
+      <div class="fact"><dt>Riders</dt><dd>2<small>대</small></dd></div>
+      <div class="fact"><dt>1인 예산</dt><dd>93<small>만원</small></dd></div>
+      <div class="fact"><dt>일몰</dt><dd>18:24<small>9/20</small></dd></div>
+      <div class="fact"><dt>D-Day</dt><dd id="dday">—</dd></div>
+    </dl>
+  </div>
+</header>
+
+<nav class="days" aria-label="일자 이동">
+  <div class="days-in" id="daynav">
+    <a class="dchip" href="#d1"><b>D1</b> 9/18 군산</a>
+    <a class="dchip" href="#d2"><b>D2</b> 9/19 완도</a>
+    <a class="dchip" href="#d3"><b>D3</b> 9/20 여수</a>
+    <a class="dchip" href="#d4"><b>D4</b> 9/21 부산</a>
+    <a class="dchip" href="#d5"><b>D5</b> 9/22 동해</a>
+    <a class="dchip" href="#d6"><b>D6</b> 9/23 귀가</a>
+    <a class="dchip" href="#plan"><b>준비</b> 예산·짐</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <p class="ronote show" id="ronote"><span>💾</span><span>체크·선택·메모는 <b>이 브라우저에만</b> 저장됩니다. 서로 맞춰보려면 맨 아래 <a href="#sync">내 선택 주고받기</a>에서 코드를 복사해 카톡으로 보내세요.</span></p>
+
+  <details class="alert">
+    <summary>⚠️ 이 코스의 진짜 변수는 다리다 — 이륜차 통행금지 구간</summary>
+    <div class="alert-body">
+      <p style="margin-bottom:10px">해안 일주는 대교를 많이 지나는데 상당수가 자동차전용도로다. 내비 차종을 <b>이륜차</b>로 설정하되, 진입부의 파란 “자동차전용도로” 표지를 반드시 육안 확인할 것.</p>
+      <table>
+        <tr><th>서해대교</th><td>불가 → <b>삽교천·아산만방조제(38번국도)</b> 또는 평택대교(43번국도)</td></tr>
+        <tr><th>이순신대교</th><td>불가(경찰 고시) → <b>기존 2번국도(율촌)</b>로 광양~여수</td></tr>
+        <tr><th>거가대교</th><td>불가 → 통영·고성·창원·김해 <b>내륙 100km 우회</b>. 이것 때문에 거제는 코스에서 뺐다</td></tr>
+        <tr><th>마창대교</th><td>불가 → 마산~창원 시가지 도로(3·14번국도)</td></tr>
+        <tr><th>광안대교<br>부산항대교<br>을숙도대교</th><td>전부 불가 → 부산은 <b>지상 해안도로</b>(광안리 해변로·수영로)로만 이동</td></tr>
+        <tr><th>울산 강동번영로</th><td>31번국도 자동차전용 구간 → 병행 일반도로</td></tr>
+        <tr><th>7번국도<br>삼척~동해</th><td>근덕~오분 등 자동차전용 → 이륜차 우회도로 있으나 <b>선형·폭 열악, 저속 주행</b></td></tr>
+        <tr><th>고성<br>통일전망대</th><td><b>오토바이 진입 자체가 금지</b>(4륜차만 등록 후 진입) → 북쪽 종점은 <b>대진항·화진포</b>로</td></tr>
+        <tr><th>확인 필요</th><td>완도대교·신지대교(자료 엇갈림 — 막히면 구 13번/77번 우회), 새만금방조제, 고군산연결도로 본선(<b>인도교는 확정 금지</b>), 돌산대교, 창선삼천포대교</td></tr>
+      </table>
+    </div>
+  </details>
+</div>
+
+<main>
+<div class="wrap grid">
+
+  <aside class="rail" aria-label="루트 진행">
+    <div class="rail-h">Route</div>
+    <ol id="railList">
+      <li data-rail="d1"><a href="#d1"><b>군산</b><span class="km">D1 · 300km</span></a></li>
+      <li data-rail="d2"><a href="#d2"><b>완도</b><span class="km">D2 · 350km</span></a></li>
+      <li data-rail="d3"><a href="#d3"><b>여수</b><span class="km">D3 · 280km</span></a></li>
+      <li data-rail="d4"><a href="#d4"><b>부산</b><span class="km">D4 · 350km</span></a></li>
+      <li data-rail="d5"><a href="#d5"><b>동해 묵호</b><span class="km">D5 · 420km</span></a></li>
+      <li data-rail="d6"><a href="#d6"><b>고성 → 화성</b><span class="km">D6 · 450km</span></a></li>
+    </ol>
+  </aside>
+
+  <div>
+
+  <!-- ══════════════ D1 ══════════════ -->
+  <section class="day" id="d1">
+    <div class="day-head">
+      <div class="daynum"><small>DAY</small>1</div>
+      <div class="day-meta">
+        <h2>화성 → 군산</h2>
+        <p class="day-route">9/18 금 · 궁평항 → 왜목마을 → 안면도 → 대천 → 서천 → 군산</p>
+      </div>
+      <div class="day-stats">
+        <div class="stat"><b>300</b><span>km</span></div>
+        <div class="stat"><b>7h</b><span>주행</span></div>
+        <div class="stat"><b>07:00</b><span>출발</span></div>
+      </div>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h"><span class="dot"></span>주행 — 77번 국도 서해안</div>
+      <ol class="stops">
+        <li class="stop"><span class="time">07:00</span><div class="stop-b"><div class="stop-n">화성 출발<span class="tag t-route">START</span></div><p class="stop-d">서해대교는 이륜차 불가 — 삽교천방조제로 우회</p></div></li>
+        <li class="stop"><span class="time">07:40</span><div class="stop-b"><div class="stop-n">궁평항<span class="tag t-view">낙조·방파제</span></div><p class="stop-d">집에서 40분. 워밍업 겸 첫 바다</p></div><a class="nv" href="https://map.naver.com/p/search/궁평항" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">09:00</span><div class="stop-b"><div class="stop-n">왜목마을<span class="tag t-view">일출·일몰</span></div><p class="stop-d">일출과 일몰을 한 자리에서 보는 특이 지형</p></div><a class="nv" href="https://map.naver.com/p/search/당진%20왜목마을" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">11:00</span><div class="stop-b"><div class="stop-n">안면도 해안 소나무숲길</div><p class="stop-d">서산 → 태안 → 안면도. 백사장 옆 소나무 도로</p></div><a class="nv" href="https://map.naver.com/p/search/안면도%20꽃지해수욕장" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">15:00</span><div class="stop-b"><div class="stop-n">대천해수욕장 → 무창포 → 춘장대</div><p class="stop-d">보령·서천 해안 연속 구간</p></div><a class="nv" href="https://map.naver.com/p/search/대천해수욕장" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">17:30</span><div class="stop-b"><div class="stop-n">군산 도착</div><p class="stop-d">리아스식 해안이라 평균 45km/h. 거리보다 시간이 더 든다</p></div></li>
+      </ol>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h eat"><span class="dot"></span>저녁 — 일찍 마감하니 8시 전 도착</div>
+      <ol class="stops" data-pick="d1-eat">
+        <li class="stop pick" data-opt="binhaewon"><span class="radio"></span><div class="stop-b"><div class="stop-n">빈해원</div><p class="stop-d"><span class="price">물짜장 11,000 · 삼선짬뽕 11,000 · 탕수육(소) 15,000</span><br>장미동 짬뽕특화거리 · 10:30–20:00(브레이크 17–18시) · <span class="warn">월 휴무</span> · 063-445-2429</p></div><a class="nv" href="https://map.naver.com/p/search/군산%20빈해원" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="jjaebo"><span class="radio"></span><div class="stop-b"><div class="stop-n">째보식당</div><p class="stop-d"><span class="price">꽃게장·연어장·전복장 정식</span><br>구영3길 70, 째보선창 · 11:00–20:00 연중무휴</p></div><a class="nv" href="https://map.naver.com/p/search/군산%20째보식당" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="ilpum"><span class="radio"></span><div class="stop-b"><div class="stop-n">일품아구</div><p class="stop-d"><span class="price">아구탕 16,000 · 대구뽈찜(중) 55,000</span><br>수송동 · 11:00–21:30 · 술자리 상권과 같은 동네</p></div><a class="nv" href="https://map.naver.com/p/search/군산%20일품아구" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h drink"><span class="dot"></span>밤 — 수송동 상권</div>
+      <ol class="stops">
+        <li class="stop"><label class="tick"><input type="checkbox" data-check="d1-b1"><span></span></label><div class="stop-b"><div class="stop-n">심야식당쥬라이</div><p class="stop-d"><span class="price">한우대창모츠나베 27,000 · 바지락술찜 18,000 · 명란오믈렛 8,000</span><br><b>17:00–02:00 연중무휴</b> — 늦게 도착해도 되는 유일한 곳</p></div><a class="nv" href="https://map.naver.com/p/search/군산%20심야식당쥬라이" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><label class="tick"><input type="checkbox" data-check="d1-b2"><span></span></label><div class="stop-b"><div class="stop-n">곤주</div><p class="stop-d"><span class="price">쉬림프감바스 19,000 · 명란버터구이 19,000 · 바지락어묵탕 18,000</span><br>17:00–24:00 (L.O 23:00)</p></div><a class="nv" href="https://map.naver.com/p/search/군산%20곤주" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><label class="tick"><input type="checkbox" data-check="d1-b3"><span></span></label><div class="stop-b"><div class="stop-n">은주 수송점</div><p class="stop-d"><span class="price">아롱사태전골 32,900 · 바지락술찜 21,900 · 생맥주 3,900</span><br>17:00–01:00 · <span class="warn">일 휴무</span></p></div><a class="nv" href="https://map.naver.com/p/search/군산%20은주%20수송점" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h stay"><span class="dot"></span>숙소 — 하나 고르기</div>
+      <ol class="stops" data-pick="d1-stay">
+        <li class="stop pick" data-opt="maru"><span class="radio"></span><div class="stop-b"><div class="stop-n">군산 마루호텔</div><p class="stop-d"><span class="price">48,000–73,000원</span> · 원도심 구시장로 82 · 주차 30대+발렛<br>근대화거리 도보권. 술은 수송동까지 이동 필요</p></div><a class="nv" href="https://map.naver.com/p/search/군산%20마루호텔" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="justsleep"><span class="radio"></span><div class="stop-b"><div class="stop-n">저스트슬립호텔 나운점</div><p class="stop-d"><span class="price">46,000–51,000원</span> · 나운동 부곡3길 15-5 · <b>무료주차</b></p></div><a class="nv" href="https://map.naver.com/p/search/군산%20저스트슬립호텔%20나운점" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="mari"><span class="radio"></span><div class="stop-b"><div class="stop-n">군산 마리호텔 나운점</div><p class="stop-d"><span class="price">45,000원~</span> · 나운동 부곡3길 4 · 은파호수공원 도보 10분</p></div><a class="nv" href="https://map.naver.com/p/search/군산%20마리호텔%20나운점" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="susong"><span class="radio"></span><div class="stop-b"><div class="stop-n">수송동 아무 모텔 (추천)</div><p class="stop-d">술집 세 곳이 전부 수송동이다. 걸어서 숙소로 돌아오려면 여기가 정답 — 지도에서 직접 고르자</p></div><a class="nv" href="https://map.naver.com/p/search/군산%20수송동%20모텔" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+    </div>
+
+    <div class="notebox"><label for="n-d1">Day 1 메모</label><textarea id="n-d1" data-note="d1" placeholder="바꾸고 싶은 것, 예약한 곳, 친구 의견…"></textarea></div>
+  </section>
+
+  <!-- ══════════════ D2 ══════════════ -->
+  <section class="day" id="d2">
+    <div class="day-head">
+      <div class="daynum"><small>DAY</small>2</div>
+      <div class="day-meta">
+        <h2>군산 → 완도</h2>
+        <p class="day-route">9/19 토 · 새만금 → 선유도 → 변산 → 영광 백수해안도로 → 목포 → 땅끝 → 완도</p>
+      </div>
+      <div class="day-stats">
+        <div class="stat"><b>350</b><span>km</span></div>
+        <div class="stat"><b>8h</b><span>주행</span></div>
+        <div class="stat"><b>07:00</b><span>출발</span></div>
+      </div>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h"><span class="dot"></span>주행 — 가장 긴 날</div>
+      <ol class="stops">
+        <li class="stop"><span class="time">07:30</span><div class="stop-b"><div class="stop-n">새만금방조제<span class="tag t-view">33km 직선</span></div><p class="stop-d"><span class="warn">이륜차 통행 표지 확인</span> — 자료상 일반도로로 보이나 확정 근거 없음</p></div><a class="nv" href="https://map.naver.com/p/search/새만금방조제" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">08:30</span><div class="stop-b"><div class="stop-n">고군산군도 — 선유도</div><p class="stop-d">신시도~무녀도~선유도~장자도. <span class="warn">차량 본선만, 인도교 진입 금지</span></p></div><a class="nv" href="https://map.naver.com/p/search/선유도해수욕장" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">10:00</span><div class="stop-b"><div class="stop-n">변산 채석강</div><p class="stop-d">부안. 층암절벽 해식지형</p></div><a class="nv" href="https://map.naver.com/p/search/채석강" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">14:00</span><div class="stop-b"><div class="stop-n">영광 백수해안도로<span class="tag t-route">서해 BEST</span></div><p class="stop-d">16.8km · 한국의 아름다운 길 100선. 서해안 구간의 하이라이트</p></div><a class="nv" href="https://map.naver.com/p/search/백수해안도로" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">15:30</span><div class="stop-b"><div class="stop-n">목포 유달산</div><p class="stop-d">함평·무안 거쳐. 시간 빠듯하면 통과</p></div><a class="nv" href="https://map.naver.com/p/search/목포%20유달산" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">17:00</span><div class="stop-b"><div class="stop-n">해남 땅끝전망대<span class="tag t-view">한반도 최남단</span></div><p class="stop-d">모노레일로 전망대까지. 운영시간 계절별 변동</p></div><a class="nv" href="https://map.naver.com/p/search/땅끝전망대" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">18:00</span><div class="stop-b"><div class="stop-n">완도 도착<span class="tag t-stop">완도대교 확인</span></div><p class="stop-d">막히면 구 13번/77번 국도로 우회</p></div></li>
+      </ol>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h eat"><span class="dot"></span>저녁·밤 — 완도는 횟집이 곧 술집이다</div>
+      <ol class="stops" data-pick="d2-eat">
+        <li class="stop pick" data-opt="sanghwa"><span class="radio"></span><div class="stop-b"><div class="stop-n">상화식당<span class="tag t-view">테라스</span></div><p class="stop-d"><span class="price">전복물회 15,000 · 전복비빔밥 12,000 · 전복코스(4인~) 50,000</span><br>해변공원로 33 · 10–21시(브레이크 15–17시) · <span class="warn">격주 월 휴무</span> · 061-554-4484<br><b>테라스가 있어 저녁 먹고 그대로 술자리로 이어진다</b></p></div><a class="nv" href="https://map.naver.com/p/search/완도%20상화식당" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="daeheung"><span class="radio"></span><div class="stop-b"><div class="stop-n">대흥전복식당</div><p class="stop-d"><span class="price">전복물회 15,000 · 전복코스 2인 80,000</span><br>장보고대로 313 · 06–22시 연중무휴</p></div><a class="nv" href="https://map.naver.com/p/search/완도%20대흥전복식당" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="haemul"><span class="radio"></span><div class="stop-b"><div class="stop-n">완도해물탕</div><p class="stop-d"><span class="price">해물탕 2인 55,000 · 해물뚝배기 12,000–18,000</span><br>장보고대로 256-1 · <span class="warn">L.O 20:30</span></p></div><a class="nv" href="https://map.naver.com/p/search/완도해물탕" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="myungpum"><span class="radio"></span><div class="stop-b"><div class="stop-n">명품전복궁</div><p class="stop-d"><span class="price">전복장비빔밥 10,000 · 전복한상 40,000 · 전복물회 15,000</span><br>개포로 34-1 · <span class="warn">수 휴무</span> · 061-554-0510</p></div><a class="nv" href="https://map.naver.com/p/search/완도%20명품전복궁" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+      <p class="stop-d" style="padding:9px 3px 0">완도엔 별도 포차거리가 없다. 완도항·해변공원로 일대를 걸으면서 즉흥으로 고르는 게 현실적. <a href="https://map.naver.com/p/search/완도항" target="_blank" rel="noopener">완도항 주변 보기</a></p>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h stay"><span class="dot"></span>숙소</div>
+      <ol class="stops" data-pick="d2-stay">
+        <li class="stop pick" data-opt="romance"><span class="radio"></span><div class="stop-b"><div class="stop-n">완도 로망스</div><p class="stop-d"><span class="price">45,000원~</span> · 여객선터미널 인근 — 도보권 최상</p></div><a class="nv" href="https://map.naver.com/p/search/완도%20로망스%20모텔" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="tower"><span class="radio"></span><div class="stop-b"><div class="stop-n">완도 타워모텔</div><p class="stop-d"><span class="price">51,000원~</span> · 완도읍 시내</p></div><a class="nv" href="https://map.naver.com/p/search/완도%20타워모텔" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="zeus"><span class="radio"></span><div class="stop-b"><div class="stop-n">완도 제우스</div><p class="stop-d"><span class="price">55,000원~</span> · 완도읍 시내</p></div><a class="nv" href="https://map.naver.com/p/search/완도%20제우스%20모텔" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="lamer"><span class="radio"></span><div class="stop-b"><div class="stop-n">완도 라메르호텔</div><p class="stop-d"><span class="price">60,000원~</span> · 비즈니스호텔급. 라이딩 후 회복 우선이면</p></div><a class="nv" href="https://map.naver.com/p/search/완도%20라메르호텔" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+    </div>
+
+    <div class="notebox"><label for="n-d2">Day 2 메모</label><textarea id="n-d2" data-note="d2" placeholder="가장 빡센 날. 뺄 경유지가 있으면 여기 적자"></textarea></div>
+  </section>
+
+  <!-- ══════════════ D3 ══════════════ -->
+  <section class="day" id="d3">
+    <div class="day-head">
+      <div class="daynum"><small>DAY</small>3</div>
+      <div class="day-meta">
+        <h2>완도 → 여수</h2>
+        <p class="day-route">9/20 일 · 명사십리 → 강진 → 보성 녹차밭 → 고흥 → 여수</p>
+      </div>
+      <div class="day-stats">
+        <div class="stat"><b>280</b><span>km</span></div>
+        <div class="stat"><b>6h</b><span>주행</span></div>
+        <div class="stat"><b>08:00</b><span>출발</span></div>
+      </div>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h"><span class="dot"></span>주행 — 여유 있는 날</div>
+      <ol class="stops">
+        <li class="stop"><span class="time">08:00</span><div class="stop-b"><div class="stop-n">신지대교 → 명사십리 해수욕장</div><p class="stop-d">완도읍에서 20분</p></div><a class="nv" href="https://map.naver.com/p/search/신지명사십리해수욕장" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">09:00</span><div class="stop-b"><div class="stop-n">완도타워<span class="tag t-view">선택</span></div><p class="stop-d">상황봉 자락 전망대. 시간 여유 있으면</p></div><a class="nv" href="https://map.naver.com/p/search/완도타워" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">12:00</span><div class="stop-b"><div class="stop-n">보성 대한다원<span class="tag t-view">점심</span></div><p class="stop-d">녹차밭. 점심도 여기서 해결</p></div><a class="nv" href="https://map.naver.com/p/search/보성%20대한다원" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">14:00</span><div class="stop-b"><div class="stop-n">고흥반도 — 팔영대교</div><p class="stop-d">우주발사전망대 방면 해안도로</p></div><a class="nv" href="https://map.naver.com/p/search/팔영대교" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">16:30</span><div class="stop-b"><div class="stop-n">여수 도착 → 돌산대교 야경</div><p class="stop-d">해가 6시 24분에 진다. 어두워지기 전에 다리 한 바퀴</p></div><a class="nv" href="https://map.naver.com/p/search/돌산대교" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h eat"><span class="dot"></span>저녁</div>
+      <ol class="stops" data-pick="d3-eat">
+        <li class="stop pick" data-opt="gaedo"><span class="radio"></span><div class="stop-b"><div class="stop-n">개도집 — 서대회무침</div><p class="stop-d"><span class="price">서대회무침 10,000 · 서대찜 10,000</span><br>남산북6길 5 · 08:00–20:00</p></div><a class="nv" href="https://map.naver.com/p/search/여수%20개도집" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="hwangso"><span class="radio"></span><div class="stop-b"><div class="stop-n">황소식당 — 게장백반</div><p class="stop-d">간장·양념게장 + 반찬 푸짐. 여수 게장백반 대표 중 하나</p></div><a class="nv" href="https://map.naver.com/p/search/여수%20황소식당%20게장백반" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="jinmi"><span class="radio"></span><div class="stop-b"><div class="stop-n">진미식당 — 게장백반</div><p class="stop-d">황소식당과 함께 자주 꼽히는 곳. 웨이팅 상황 보고 선택</p></div><a class="nv" href="https://map.naver.com/p/search/여수%20진미식당" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h drink"><span class="dot"></span>밤 — 여수 밤바다</div>
+      <ol class="stops">
+        <li class="stop"><label class="tick"><input type="checkbox" data-check="d3-b1"><span></span></label><div class="stop-b"><div class="stop-n">낭만포차거리<span class="tag t-stop">바가지 주의</span></div><p class="stop-d">거북선대교 아래 하멜로 · 3–10월 <b>18:00–익일 01:00</b> · 매월 첫째 수 휴무<br><span class="warn">2023년 이후 “양·질 대비 비싸다”는 평이 많아 매출이 1/3까지 떨어진 기록이 있다.</span> 1인 3–5만원 각오하고 <b>한 번 경험하는 값</b>으로.<br>추천 포차 — 32번 낭만도시(해물삼합·창가 야경), 44번(2인세트 해물탕), 100도(돌문어삼합·딱새우)</p></div><a class="nv" href="https://map.naver.com/p/search/여수%20낭만포차거리" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><label class="tick"><input type="checkbox" data-check="d3-b2"><span></span></label><div class="stop-b"><div class="stop-n">교동시장 일대 노포<span class="tag t-view">가성비</span></div><p class="stop-d">포차거리 밖이 확실히 싸다. 낭만포차에서 한 잔만 하고 여기로 넘어오는 것도 방법</p></div><a class="nv" href="https://map.naver.com/p/search/여수%20교동시장" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h stay"><span class="dot"></span>숙소 — 전부 밤바다 도보권</div>
+      <ol class="stops" data-pick="d3-stay">
+        <li class="stop pick" data-opt="byeol"><span class="radio"></span><div class="stop-b"><div class="stop-n">여수 별 무인텔</div><p class="stop-d"><span class="price">약 50,000원</span> · 충무동 · <b>낭만포차 건너편</b>, 여객터미널 3분</p></div><a class="nv" href="https://map.naver.com/p/search/여수%20별%20무인텔" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="kkuljam"><span class="radio"></span><div class="stop-b"><div class="stop-n">여수 꿀잠엣지</div><p class="stop-d"><span class="price">약 50,000원</span> · 공화동 · 낭만포차·엑스포역 인접</p></div><a class="nv" href="https://map.naver.com/p/search/여수%20꿀잠엣지" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="saerok"><span class="radio"></span><div class="stop-b"><div class="stop-n">여수 스테이 새록</div><p class="stop-d"><span class="price">약 50,000원</span> · 교동 · 이순신광장 초근접, 오션뷰·루프탑</p></div><a class="nv" href="https://map.naver.com/p/search/여수%20스테이%20새록" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+    </div>
+
+    <div class="notebox"><label for="n-d3">Day 3 메모</label><textarea id="n-d3" data-note="d3" placeholder=""></textarea></div>
+  </section>
+
+  <!-- ══════════════ D4 ══════════════ -->
+  <section class="day" id="d4">
+    <div class="day-head">
+      <div class="daynum"><small>DAY</small>4</div>
+      <div class="day-meta">
+        <h2>여수 → 부산</h2>
+        <p class="day-route">9/21 월 · 광양 → 하동 → 남해 물미해안도로 → 삼천포 → 통영 → 창원 → 부산</p>
+      </div>
+      <div class="day-stats">
+        <div class="stat"><b>350</b><span>km</span></div>
+        <div class="stat"><b>8h</b><span>주행</span></div>
+        <div class="stat"><b>07:30</b><span>출발</span></div>
+      </div>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h"><span class="dot"></span>주행 — 우회가 두 번 있는 날</div>
+      <ol class="stops">
+        <li class="stop"><span class="time">07:30</span><div class="stop-b"><div class="stop-n">여수 → 광양<span class="tag t-stop">이순신대교 금지</span></div><p class="stop-d">기존 <b>2번국도(율촌 경유)</b>로 돌아간다</p></div></li>
+        <li class="stop"><span class="time">09:00</span><div class="stop-b"><div class="stop-n">하동 → 남해대교/노량대교</div><p class="stop-d">남해도 진입</p></div><a class="nv" href="https://map.naver.com/p/search/노량대교" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">10:00</span><div class="stop-b"><div class="stop-n">물미해안도로<span class="tag t-route">남해 BEST</span></div><p class="stop-d">미조~삼동. 남해 최고 절경 구간. 독일마을도 근처</p></div><a class="nv" href="https://map.naver.com/p/search/남해%20물미해안도로" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">12:00</span><div class="stop-b"><div class="stop-n">창선·삼천포대교 → 사천<span class="tag t-view">점심</span></div><p class="stop-d">5개 교량 연속 구간</p></div><a class="nv" href="https://map.naver.com/p/search/창선삼천포대교" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">14:00</span><div class="stop-b"><div class="stop-n">통영 달아공원 · 산양일주도로</div><p class="stop-d">미륵도 한 바퀴. 남해 다도해 전망</p></div><a class="nv" href="https://map.naver.com/p/search/통영%20달아공원" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">15:30</span><div class="stop-b"><div class="stop-n">고성 → 창원 → 김해 → 부산<span class="tag t-stop">거가대교 금지</span></div><p class="stop-d"><b>거제를 넣으면 왕복 +100km, 부산 도착이 20시를 넘는다.</b> 이번엔 생략 권장</p></div></li>
+        <li class="stop"><span class="time">17:30</span><div class="stop-b"><div class="stop-n">광안리 진입<span class="tag t-stop">광안대교 금지</span></div><p class="stop-d">지상 해안도로(수영로·광안리 해변로)로만</p></div><a class="nv" href="https://map.naver.com/p/search/광안리해수욕장" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h eat"><span class="dot"></span>저녁</div>
+      <ol class="stops" data-pick="d4-eat">
+        <li class="stop pick" data-opt="gwanganmilmyeon"><span class="radio"></span><div class="stop-b"><div class="stop-n">광안밀면</div><p class="stop-d"><span class="price">밀면 8,500 · 찐만두 6,000</span><br>수영로 587, 광안역 2번 출구 · <span class="warn">자체 주차장 없음</span></p></div><a class="nv" href="https://map.naver.com/p/search/광안밀면" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="eomyongbaek"><span class="radio"></span><div class="stop-b"><div class="stop-n">엄용백 돼지국밥 (수영)</div><p class="stop-d"><span class="price">국밥 1만원 내외</span> · 부산 왔으면 한 그릇은</p></div><a class="nv" href="https://map.naver.com/p/search/엄용백돼지국밥%20수영" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="millak"><span class="radio"></span><div class="stop-b"><div class="stop-n">민락 회센터 거리</div><p class="stop-d"><span class="price">자연산 시가 · 초장값 1인 1만원 내외</span><br>회 떠서 초장집에서. 술까지 여기서 끝내도 됨</p></div><a class="nv" href="https://map.naver.com/p/search/민락동%20회센터" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h drink"><span class="dot"></span>밤 — 광안리 (수변공원 아님)</div>
+      <ol class="stops">
+        <li class="stop"><div class="stop-b"><div class="stop-n" style="color:var(--stop)">⚠ 민락수변공원은 금주구역</div><p class="stop-d">2023.7.1부터 공식 금주구역 지정, <b>음주 시 과태료 5만원</b>. 공원 술자리는 빼자</p></div></li>
+        <li class="stop"><label class="tick"><input type="checkbox" data-check="d4-b1"><span></span></label><div class="stop-b"><div class="stop-n">저수지 광안점</div><p class="stop-d"><span class="price">묵은지문어숙회·뭉티기·차돌사시미 23,000–55,000</span><br>광안해변로295번길 42</p></div><a class="nv" href="https://map.naver.com/p/search/저수지%20광안점" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><label class="tick"><input type="checkbox" data-check="d4-b2"><span></span></label><div class="stop-b"><div class="stop-n">맹구포차</div><p class="stop-d"><span class="price">활어회한상·해산물한판·버터삼합 25,000–45,000</span><br>남천바다로33번길 72</p></div><a class="nv" href="https://map.naver.com/p/search/광안리%20맹구포차" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><label class="tick"><input type="checkbox" data-check="d4-b3"><span></span></label><div class="stop-b"><div class="stop-n">초힛사츠<span class="tag t-view">가성비</span></div><p class="stop-d"><span class="price">참치연어우니김밥·꼬리마늘구이·교자 8,000–42,000</span><br>광남로 74 1층 · 이자카야</p></div><a class="nv" href="https://map.naver.com/p/search/광안리%20초힛사츠" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h stay"><span class="dot"></span>숙소 — 평일이라 해운대권이 가성비 안정적</div>
+      <ol class="stops" data-pick="d4-stay">
+        <li class="stop pick" data-opt="hotelv"><span class="radio"></span><div class="stop-b"><div class="stop-n">호텔 V 해운대</div><p class="stop-d"><span class="price">50,000–60,000원</span> · 해운대역 도보 5분</p></div><a class="nv" href="https://map.naver.com/p/search/해운대%20호텔V" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="belmore"><span class="radio"></span><div class="stop-b"><div class="stop-n">벨모어 호텔</div><p class="stop-d"><span class="price">47,000–60,000원</span> · 해운대역 도보 5분</p></div><a class="nv" href="https://map.naver.com/p/search/해운대%20벨모어호텔" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="thebay"><span class="radio"></span><div class="stop-b"><div class="stop-n">해운대 더베이호텔</div><p class="stop-d"><span class="price">38,000–60,000원</span> · 해운대역 도보 4분 · 최저가</p></div><a class="nv" href="https://map.naver.com/p/search/해운대%20더베이호텔" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="gwangan"><span class="radio"></span><div class="stop-b"><div class="stop-n">광안리 도보권 (예산 상향)</div><p class="stop-d">술집이 광안리라 걸어서 오려면 여기가 맞다. 다만 5–7만원대는 빠듯 — 수영역 인근 모텔이 절충안</p></div><a class="nv" href="https://map.naver.com/p/search/광안리%20모텔" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+    </div>
+
+    <div class="notebox"><label for="n-d4">Day 4 메모</label><textarea id="n-d4" data-note="d4" placeholder="거제 넣을지 말지 여기서 결정"></textarea></div>
+  </section>
+
+  <!-- ══════════════ D5 ══════════════ -->
+  <section class="day" id="d5">
+    <div class="day-head">
+      <div class="daynum"><small>DAY</small>5</div>
+      <div class="day-meta">
+        <h2>부산 → 동해 묵호</h2>
+        <p class="day-route">9/22 화 · 7번 국도 본편 — 기장 → 울산 → 감포 → 포항 → 영덕 → 울진 → 동해</p>
+      </div>
+      <div class="day-stats">
+        <div class="stat"><b>420</b><span>km</span></div>
+        <div class="stat"><b>9h</b><span>주행</span></div>
+        <div class="stat"><b>06:30</b><span>출발</span></div>
+      </div>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h"><span class="dot"></span>주행 — 최장거리, 도심 정체 피하려면 일찍</div>
+      <ol class="stops">
+        <li class="stop"><span class="time">06:30</span><div class="stop-b"><div class="stop-n">부산 출발 → 기장</div><p class="stop-d">포항·울산 도심 정체를 피하는 유일한 방법은 이른 출발</p></div></li>
+        <li class="stop"><span class="time">08:00</span><div class="stop-b"><div class="stop-n">울산 통과<span class="tag t-stop">강동번영로 우회</span></div><p class="stop-d">31번국도 자동차전용 구간 — 병행 일반도로로</p></div></li>
+        <li class="stop"><span class="time">09:30</span><div class="stop-b"><div class="stop-n">경주 감포 — 문무대왕릉</div><p class="stop-d">동해 바다 위 수중릉</p></div><a class="nv" href="https://map.naver.com/p/search/문무대왕릉" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">10:30</span><div class="stop-b"><div class="stop-n">호미곶<span class="tag t-view">선택 · 왕복 40km</span></div><p class="stop-d">시간 빠듯하면 생략</p></div><a class="nv" href="https://map.naver.com/p/search/호미곶" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">12:00</span><div class="stop-b"><div class="stop-n">포항<span class="tag t-view">점심 · 물회</span></div><p class="stop-d">죽도시장 일대</p></div><a class="nv" href="https://map.naver.com/p/search/포항%20죽도시장%20물회" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">14:00</span><div class="stop-b"><div class="stop-n">영덕 블루로드<span class="tag t-route">동해 BEST</span></div><p class="stop-d">강구~축산. 이번 투어 동해안 최고 구간</p></div><a class="nv" href="https://map.naver.com/p/search/영덕%20블루로드" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">15:30</span><div class="stop-b"><div class="stop-n">울진 — 죽변, 망양정</div><p class="stop-d">해안 절벽 구간</p></div><a class="nv" href="https://map.naver.com/p/search/죽변항" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">17:30</span><div class="stop-b"><div class="stop-n">동해 묵호 도착<span class="tag t-stop">삼척~동해 우회</span></div><p class="stop-d">7번국도 근덕~오분 자동차전용 구간의 이륜차 우회로는 선형이 나쁘다. 저속으로</p></div></li>
+      </ol>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h eat"><span class="dot"></span>마지막 밤 — 제대로</div>
+      <ol class="stops" data-pick="d5-eat">
+        <li class="stop pick" data-opt="hoecenter"><span class="radio"></span><div class="stop-b"><div class="stop-n">묵호항 활·선어판매센터<span class="tag t-view">추천</span></div><p class="stop-d">1층에서 활어 사서 손질 → 초장집에서 상차림. <span class="price">1인 3–5만원 예상(자리값은 현장 문의)</span><br>투어 마지막 밤에 가장 어울리는 방식</p></div><a class="nv" href="https://map.naver.com/p/search/묵호항%20활어회센터" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="chakhan"><span class="radio"></span><div class="stop-b"><div class="stop-n">착한대게</div><p class="stop-d"><span class="price">kg당 9–10만원 · 2인 2kg 20만원대</span><br>반찬(멍게·전복장·가리비) 푸짐. “가격보다 질” 평가 · 묵호역 도보 15–20분</p></div><a class="nv" href="https://map.naver.com/p/search/동해%20착한대게" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="cheongpung"><span class="radio"></span><div class="stop-b"><div class="stop-n">청풍횟집</div><p class="stop-d">묵호항 일대 현지 평점 최상위권. 가격·영업시간 <span class="warn">확인 필요</span></p></div><a class="nv" href="https://map.naver.com/p/search/묵호%20청풍횟집" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h drink"><span class="dot"></span>밤 산책 · 다음날 아침</div>
+      <ol class="stops">
+        <li class="stop"><label class="tick"><input type="checkbox" data-check="d5-w1"><span></span></label><div class="stop-b"><div class="stop-n">논골담길 + 묵호등대</div><p class="stop-d">벽화 골목, 무료·상시. 숙소에서 도보. 술 깰 겸 한 바퀴</p></div><a class="nv" href="https://map.naver.com/p/search/논골담길" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><label class="tick"><input type="checkbox" data-check="d5-w2"><span></span></label><div class="stop-b"><div class="stop-n">오뚜기칼국수<span class="tag t-view">아침 해장</span></div><p class="stop-d"><span class="price">장칼국수 7,000 · 장칼만두국 8,000</span><br>일출로 10-1 · 07:00–18:00 · <span class="warn">월 휴무</span> · 옆 공영주차장 무료</p></div><a class="nv" href="https://map.naver.com/p/search/동해%20오뚜기칼국수" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h stay"><span class="dot"></span>숙소</div>
+      <ol class="stops" data-pick="d5-stay">
+        <li class="stop pick" data-opt="yeogi"><span class="radio"></span><div class="stop-b"><div class="stop-n">HOTEL 여기어때 묵호점<span class="tag t-view">1순위</span></div><p class="stop-d"><span class="price">52,000–57,000원</span> · 발한동 222-6 · 묵호역 도보 3분, 묵호항 10분<br><b>1층 주차장 20대</b> · 평점 9.2</p></div><a class="nv" href="https://map.naver.com/p/search/호텔%20여기어때%20묵호점" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="lab103"><span class="radio"></span><div class="stop-b"><div class="stop-n">103Lab 게스트하우스</div><p class="stop-d"><span class="price">도미토리 1인 약 30,000원</span> · 논골1길 19, 묵호등대 2–3분<br>캡슐형 다인실, 수제 조식 · <span class="warn">좁은 골목 진입 확인 필요</span></p></div><a class="nv" href="https://map.naver.com/p/search/103Lab%20게스트하우스" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop pick" data-opt="no25"><span class="radio"></span><div class="stop-b"><div class="stop-n">넘버25호텔 묵호점</div><p class="stop-d">2026.7 신축 · 동쪽바다중앙시장 옆 · <span class="warn">실제 스탠다드 가격 확인 필요</span></p></div><a class="nv" href="https://map.naver.com/p/search/넘버25호텔%20묵호점" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+    </div>
+
+    <div class="notebox"><label for="n-d5">Day 5 메모</label><textarea id="n-d5" data-note="d5" placeholder=""></textarea></div>
+  </section>
+
+  <!-- ══════════════ D6 ══════════════ -->
+  <section class="day" id="d6">
+    <div class="day-head">
+      <div class="daynum"><small>DAY</small>6</div>
+      <div class="day-meta">
+        <h2>동해 → 고성 → 집(화성)</h2>
+        <p class="day-route">9/23 수 · 추암 → 헌화로 → 강릉 → 속초 → 고성 대진항 → 미시령 → 서울양양고속 → 화성</p>
+      </div>
+      <div class="day-stats">
+        <div class="stat"><b>450</b><span>km</span></div>
+        <div class="stat"><b>10h</b><span>주행</span></div>
+        <div class="stat"><b>06:30</b><span>출발</span></div>
+      </div>
+    </div>
+
+    <p class="stop-d" style="margin:14px 0 0;padding:11px 13px;border:1px solid var(--stop);border-radius:10px;background:var(--stop-soft)"><b>귀가까지 하루에 끝내는 날이라 물리적으로 가장 길다.</b> 고성 대진항까지 170km, 거기서 화성까지 국도로 280km. <b>오토바이는 고속도로를 못 타니 서울양양고속은 선택지가 아니다</b> — 44·46번국도로 내려와야 하고, 그만큼 시간이 든다. 06:30에 나서야 해 지기 전에 들어온다.</p>
+
+    <div class="leg">
+      <div class="leg-h"><span class="dot"></span>오전 — 북쪽 종점 찍기</div>
+      <ol class="stops">
+        <li class="stop"><span class="time">06:30</span><div class="stop-b"><div class="stop-n">추암 촛대바위<span class="tag t-view">무료 · 왕복 20km</span></div><p class="stop-d">주차 무료. 시간이 빠듯하면 여기를 제일 먼저 뺀다</p></div><a class="nv" href="https://map.naver.com/p/search/추암촛대바위" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">08:00</span><div class="stop-b"><div class="stop-n">정동진 → 헌화로<span class="tag t-route">국내 최고</span></div><p class="stop-d">심곡~금진. 파도가 도로를 때리는 구간. 이번 투어에서 가장 기억에 남을 6km</p></div><a class="nv" href="https://map.naver.com/p/search/헌화로" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">09:30</span><div class="stop-b"><div class="stop-n">강릉 → 주문진 → 양양</div><p class="stop-d">7번국도 마지막 해안 구간</p></div><a class="nv" href="https://map.naver.com/p/search/주문진항" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">11:00</span><div class="stop-b"><div class="stop-n">속초 대포항<span class="tag t-view">점심</span></div><p class="stop-d">회·물회·오징어순대. 투어 마지막 제대로 된 식사</p></div><a class="nv" href="https://map.naver.com/p/search/속초%20대포항" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">12:30</span><div class="stop-b"><div class="stop-n">고성 화진포 · 대진항<span class="tag t-route">북쪽 종점</span></div><p class="stop-d"><b>통일전망대는 오토바이 진입 불가.</b> 최북단 인증은 여기서 — 대진항이 이번 투어가 닿는 가장 북쪽이다</p></div><a class="nv" href="https://map.naver.com/p/search/고성%20대진항" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+      </ol>
+    </div>
+
+    <div class="leg">
+      <div class="leg-h"><span class="dot"></span>귀가 — 국도로 약 280km</div>
+      <ol class="stops">
+        <li class="stop"><span class="time">13:00</span><div class="stop-b"><div class="stop-n">고성 출발 → 미시령 또는 한계령<span class="tag t-stop">13시 전 출발</span></div><p class="stop-d">투어의 마지막 와인딩. 미시령은 터널, 한계령은 고갯길 — 시간이 있으면 한계령</p></div><a class="nv" href="https://map.naver.com/p/search/한계령" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">14:30</span><div class="stop-b"><div class="stop-n">인제 → 홍천 → 양평<span class="tag t-stop">고속도로 금지</span></div><p class="stop-d"><b>오토바이는 고속도로에 못 들어간다.</b> 서울양양고속은 선택지가 아니고 <b>44번 → 46번 국도 → 홍천 → 6번국도 양평</b> 루트로 내려온다. 내비를 이륜차 모드로 두면 이 경로를 준다<br><b>9/23은 추석 연휴(9/24–26) 전날</b> — 오후 수도권 방향은 국도도 막힌다</p></div><a class="nv" href="https://map.naver.com/p/search/양평군청" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">17:00</span><div class="stop-b"><div class="stop-n">양평 → 광주 → 용인 → 화성</div><p class="stop-d">수도권 남부 진입. 퇴근 시간과 겹치니 무리하지 말 것</p></div></li>
+        <li class="stop"><span class="time">18:30</span><div class="stop-b"><div class="stop-n">집 도착<span class="tag t-route">FINISH · 2,150km</span></div><p class="stop-d">일몰 18:24 — 마지막 30분은 야간 주행이 된다. 등화류 점검이 여기서 값을 한다<br>6일 전, 같은 문에서 나갔다. 도착하면 바이크 두 대 세워놓고 사진 한 장</p></div></li>
+      </ol>
+    </div>
+
+    <div class="notebox"><label for="n-d6">Day 6 메모</label><textarea id="n-d6" data-note="d6" placeholder="귀가 루트 · 휴게 포인트"></textarea></div>
+  </section>
+
+  <!-- ══════════════ 준비 ══════════════ -->
+  <section class="day" id="plan">
+    <div class="day-head">
+      <div class="daynum"><small>PREP</small>·</div>
+      <div class="day-meta">
+        <h2>예산 · 준비물 · 예약</h2>
+        <p class="day-route">출발 전에 끝내야 하는 것들</p>
+      </div>
+    </div>
+
+    <div class="cols" style="margin-top:18px">
+      <div>
+        <div class="panel">
+          <h3>1인 예산</h3>
+          <p class="hint">2인 1실 · 리터급 연비 15km/L · 휘발유 1,700원 기준</p>
+          <table class="money">
+            <tr><td>숙소</td><td class="note">6만 × 5박 ÷ 2</td><td>150,000</td></tr>
+            <tr><td>유류비</td><td class="note">2,150km</td><td>244,000</td></tr>
+            <tr><td>식비·술값</td><td class="note">6일 × 약 6.7만</td><td>400,000</td></tr>
+            <tr><td>통행료·입장료·주차</td><td class="note"></td><td>40,000</td></tr>
+            <tr><td>예비비</td><td class="note">정비·비상</td><td>100,000</td></tr>
+            <tr class="total"><td>합계</td><td class="note"></td><td>934,000</td></tr>
+          </table>
+        </div>
+
+        <div class="panel">
+          <h3>출발 전 정비</h3>
+          <p class="hint">2,150km는 타이어 한 세트를 상당히 먹는다</p>
+          <ul class="checklist">
+            <li><label class="tick"><input type="checkbox" data-check="p-t1"><span></span></label><span class="txt">타이어 마모도·공기압 — 남은 홈 얕으면 <b>출발 전 교체</b></span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-t2"><span></span></label><span class="txt">체인 장력·주유, 스프라켓 마모</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-t3"><span></span></label><span class="txt">엔진오일·필터, 냉각수</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-t4"><span></span></label><span class="txt">브레이크 패드·오일</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-t5"><span></span></label><span class="txt">등화류 전체 (야간 이동 대비)</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-t6"><span></span></label><span class="txt">배터리, 볼트 조임</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <div class="panel">
+          <h3>짐</h3>
+          <p class="hint">9월 강원 강수 평년 229mm, 새벽 최저 17℃ — 비와 추위 둘 다 온다</p>
+          <ul class="checklist">
+            <li><label class="tick"><input type="checkbox" data-check="p-g1"><span></span></label><span class="txt"><b>상하 분리형 레인수트</b> · 방수 장갑 · 부츠 커버</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-g2"><span></span></label><span class="txt">방풍 이너 · 넥워머</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-g3"><span></span></label><span class="txt">페이스실드 발수코팅제</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-g4"><span></span></label><span class="txt">펑크 수리키트 + 휴대용 공기주입기</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-g5"><span></span></label><span class="txt">예비 퓨즈 · 케이블타이 · 절연테이프</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-g6"><span></span></label><span class="txt">보조배터리 · 폰 거치대 · 충전 케이블</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-g7"><span></span></label><span class="txt">면허증 원본 · 등록증 · 보험증서 · 신분증</span></li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>예약 · 확인</h3>
+          <p class="hint">숙소 5곳 중 오토바이 주차를 명시한 곳은 한 곳도 없었다</p>
+          <ul class="checklist">
+            <li><label class="tick"><input type="checkbox" data-check="p-r1"><span></span></label><span class="txt">숙소 5곳 예약 — 전화로 <b>“오토바이 2대 주차 되나요”</b> 반드시 확인</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-r2"><span></span></label><span class="txt">군산은 <b>수송동 상권</b> 모텔로 재검색 (술집 밀집지)</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-r3"><span></span></label><span class="txt"><b>완도대교 이륜차 통행 여부</b> — 완도군청/익산지방국토관리청 문의</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-r4"><span></span></label><span class="txt">새만금방조제 · 고군산연결도로 이륜차 통행 여부</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-r5"><span></span></label><span class="txt">7번국도 삼척~동해 자동차전용 구간의 우회로 상태</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-r6"><span></span></label><span class="txt">출발 1주일 전 <b>기상청 태풍정보</b> — 9월은 태풍 시즌 후반부</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-r7"><span></span></label><span class="txt">내비게이션 차종을 <b>이륜차</b>로 설정</span></li>
+            <li><label class="tick"><input type="checkbox" data-check="p-r8"><span></span></label><span class="txt">휴무일 재확인 — 빈해원(월), 복성루(일·16시 마감), 상화식당(격주 월), 오뚜기칼국수(월), 은주(일)</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h3>같이 정할 것</h3>
+      <p class="hint">둘 다 이 페이지를 편집할 수 있다. 여기에 적으면 상대에게도 보인다</p>
+      <textarea id="n-shared" data-note="shared" style="min-height:110px" placeholder="예) 거제 넣을까? / D2가 너무 길면 목포에서 끊고 완도를 D3 아침으로 미루자 / 술값 정산은 n빵"></textarea>
+    </div>
+
+    <div class="panel" id="sync">
+      <h3>내 선택 주고받기</h3>
+      <p class="hint">이 페이지는 서버가 없어서 각자 브라우저에만 저장됩니다. 코드를 복사해 카톡으로 주고받으면 서로의 선택을 그대로 불러올 수 있습니다</p>
+      <div class="syncrow">
+        <button type="button" class="btn" id="btnCopy">내 선택 복사</button>
+        <button type="button" class="btn ghost" id="btnPasteOpen">받은 코드 넣기</button>
+        <span class="syncmsg" id="syncMsg"></span>
+      </div>
+      <div id="pasteWrap" hidden>
+        <textarea id="pasteBox" style="min-height:80px;margin-top:11px;font-family:var(--f-mono);font-size:11.5px" placeholder="받은 코드를 여기 붙여넣으세요"></textarea>
+        <div class="syncrow" style="margin-top:9px">
+          <button type="button" class="btn" id="btnApply">불러오기</button>
+          <button type="button" class="btn ghost" id="btnMerge">내 것과 합치기</button>
+        </div>
+        <p class="hint" style="margin:9px 0 0">불러오기는 상대 것으로 덮어쓰고, 합치기는 내가 비워둔 항목만 상대 것으로 채웁니다</p>
+      </div>
+    </div>
+  </section>
+
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    거리·시간은 해안도로 평균속도(서·남해안 45km/h, 동해안 55km/h) 기준 추정치. 가격·영업시간은 2026-09-01 웹조사 시점 기준이며 변동될 수 있으니 방문 전 확인하세요.
+    일출 06:10 / 일몰 18:24 (9/20 기준) · 2026 추석 연휴 9/24–26.
+    <br>원본 계획서: SyonNotes <span class="mono">sources/생활/777 해안일주 오토바이 투어 계획 (2026-09).md</span>
+  </div>
+</footer>
+
+<div class="savebar" id="savebar"><span class="pulse"></span><span id="savetxt">저장됨</span></div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ── D-day ── */
+  (function(){
+    var el = document.getElementById('dday');
+    if(!el) return;
+    var start = new Date(2026,8,18,7,0,0);
+    var diff = Math.ceil((start - new Date())/86400000);
+    el.textContent = diff > 0 ? ('D-' + diff) : (diff === 0 ? 'D-DAY' : '완주');
+  })();
+
+  /* ── state ── */
+  var LS = 'trip777.v1';
+  var state = { checks:{}, picks:{}, notes:{} };
+  var applying = false;
+
+  function normalize(s){
+    return {
+      checks: (s && s.checks) || {},
+      picks:  (s && s.picks)  || {},
+      notes:  (s && s.notes)  || {}
+    };
+  }
+
+  function readLocal(){
+    try { var r = localStorage.getItem(LS); return r ? normalize(JSON.parse(r)) : null; }
+    catch(e){ return null; }
+  }
+  function writeLocal(){
+    try { localStorage.setItem(LS, JSON.stringify(state)); } catch(e){}
+  }
+
+  /* ── save chip ── */
+  var bar = document.getElementById('savebar'), txt = document.getElementById('savetxt'), hideT = null;
+  function chip(msg, localOnly){
+    if(!bar) return;
+    txt.textContent = msg;
+    bar.classList.toggle('local', !!localOnly);
+    bar.classList.add('show');
+    clearTimeout(hideT);
+    hideT = setTimeout(function(){ bar.classList.remove('show'); }, 1800);
+  }
+
+  /* ── render ── */
+  function render(){
+    applying = true;
+
+    document.querySelectorAll('input[type=checkbox][data-check]').forEach(function(cb){
+      var on = !!state.checks[cb.dataset.check];
+      cb.checked = on;
+      var li = cb.closest('li');
+      if(li) li.classList.toggle('checked', on);
+    });
+
+    document.querySelectorAll('[data-pick]').forEach(function(group){
+      var sel = state.picks[group.dataset.pick];
+      group.querySelectorAll('li.pick').forEach(function(li){
+        li.classList.toggle('on', li.dataset.opt === sel);
+      });
+    });
+
+    document.querySelectorAll('textarea[data-note]').forEach(function(ta){
+      var v = state.notes[ta.dataset.note] || '';
+      if(document.activeElement !== ta && ta.value !== v) ta.value = v;
+    });
+
+    document.querySelectorAll('#railList li').forEach(function(li){
+      var id = li.dataset.rail;
+      li.classList.toggle('done', !!state.picks[id + '-stay']);
+    });
+
+    applying = false;
+  }
+
+  /* ── save ── */
+  function save(){
+    writeLocal();
+    chip('이 브라우저에 저장됨', true);
+  }
+
+  /* ── events ── */
+  document.addEventListener('change', function(e){
+    var cb = e.target.closest('input[type=checkbox][data-check]');
+    if(!cb || applying) return;
+    if(cb.checked) state.checks[cb.dataset.check] = true;
+    else delete state.checks[cb.dataset.check];
+    render(); save();
+  });
+
+  document.addEventListener('click', function(e){
+    if(e.target.closest('a, label, input, textarea')) return;
+    var li = e.target.closest('li.pick');
+    if(!li) return;
+    var group = li.closest('[data-pick]');
+    if(!group) return;
+    var key = group.dataset.pick;
+    state.picks[key] = (state.picks[key] === li.dataset.opt) ? '' : li.dataset.opt;
+    render(); save();
+  });
+
+  document.addEventListener('input', function(e){
+    var ta = e.target.closest('textarea[data-note]');
+    if(!ta || applying) return;
+    state.notes[ta.dataset.note] = ta.value;
+    save();
+  });
+
+  /* ── nav highlight ── */
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.dchip'));
+  var secs  = chips.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting) return;
+        var i = secs.indexOf(en.target);
+        chips.forEach(function(c,j){ c.setAttribute('aria-current', j === i ? 'true' : 'false'); });
+        var c = chips[i];
+        if(c && c.parentElement) {
+          var p = c.parentElement, l = c.offsetLeft - p.clientWidth/2 + c.clientWidth/2;
+          p.scrollTo({ left:l, behavior:'smooth' });
+        }
+      });
+    }, { rootMargin:'-60px 0px -70% 0px' });
+    secs.forEach(function(s){ if(s) io.observe(s); });
+  }
+
+  /* ── 선택 주고받기 ── */
+  function encode(){
+    var json = JSON.stringify({ c:state.checks, p:state.picks, n:state.notes });
+    return 'TRIP777.' + btoa(unescape(encodeURIComponent(json)));
+  }
+  function decode(text){
+    var raw = String(text || '').trim().replace(/^TRIP777\./, '');
+    var o = JSON.parse(decodeURIComponent(escape(atob(raw))));
+    return { checks:o.c || {}, picks:o.p || {}, notes:o.n || {} };
+  }
+  var msgEl = document.getElementById('syncMsg'), msgT = null;
+  function say(t, bad){
+    if(!msgEl) return;
+    msgEl.textContent = t;
+    msgEl.style.color = bad ? 'var(--stop)' : 'var(--go)';
+    clearTimeout(msgT);
+    msgT = setTimeout(function(){ msgEl.textContent = ''; }, 3200);
+  }
+  var bCopy = document.getElementById('btnCopy');
+  if(bCopy) bCopy.addEventListener('click', function(){
+    var code = encode();
+    function fallback(){
+      var t = document.createElement('textarea');
+      t.value = code; t.style.position = 'fixed'; t.style.opacity = '0';
+      document.body.appendChild(t); t.select();
+      try { document.execCommand('copy'); say('복사했습니다 — 카톡으로 보내세요'); }
+      catch(e){ say('복사 실패 — 코드를 직접 선택해 복사하세요', true); }
+      document.body.removeChild(t);
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(code).then(function(){ say('복사했습니다 — 카톡으로 보내세요'); }, fallback);
+    } else fallback();
+  });
+  var bOpen = document.getElementById('btnPasteOpen'), wrap = document.getElementById('pasteWrap');
+  if(bOpen && wrap) bOpen.addEventListener('click', function(){
+    wrap.hidden = !wrap.hidden;
+    if(!wrap.hidden) document.getElementById('pasteBox').focus();
+  });
+  function applyCode(merge){
+    var box = document.getElementById('pasteBox'), incoming;
+    try { incoming = decode(box.value); }
+    catch(e){ say('코드를 읽을 수 없습니다 — 전체를 다시 복사해 붙여넣으세요', true); return; }
+    if(merge){
+      Object.keys(incoming.checks).forEach(function(k){ if(!state.checks[k]) state.checks[k] = true; });
+      Object.keys(incoming.picks).forEach(function(k){ if(!state.picks[k]) state.picks[k] = incoming.picks[k]; });
+      Object.keys(incoming.notes).forEach(function(k){
+        var mine = state.notes[k] || '', theirs = incoming.notes[k] || '';
+        if(!theirs) return;
+        state.notes[k] = mine ? (mine + '\n— 상대 —\n' + theirs) : theirs;
+      });
+      say('합쳤습니다');
+    } else {
+      state = incoming;
+      say('불러왔습니다');
+    }
+    render(); writeLocal();
+    box.value = '';
+  }
+  var bApply = document.getElementById('btnApply'), bMerge = document.getElementById('btnMerge');
+  if(bApply) bApply.addEventListener('click', function(){ applyCode(false); });
+  if(bMerge) bMerge.addEventListener('click', function(){ applyCode(true); });
+
+  /* ── boot ── */
+  state = normalize(readLocal());
+  render();
+
+})();
+</script>
+
+</body>
+</html>
