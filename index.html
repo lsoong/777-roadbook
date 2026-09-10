@@ -203,6 +203,7 @@ section.day{scroll-margin-top:62px; margin-bottom:34px}
 .route1-pts{display:flex; flex-wrap:wrap; align-items:center; gap:5px 7px; font-size:13.5px; line-height:1.5}
 .route1-pts .pt{padding:2px 8px; border-radius:6px; background:var(--surface-2); border:1px solid var(--line)}
 .route1-pts .pt.end{background:var(--route-soft); border-color:var(--route-line); color:var(--route); font-weight:700}
+.route1-pts .pt.cafe{background:color-mix(in srgb,#7A4CA8 12%, var(--surface)); border-color:color-mix(in srgb,#7A4CA8 40%, var(--line))}
 .route1-pts .pt.gas{background:color-mix(in srgb,#B4642A 12%, var(--surface)); border-color:color-mix(in srgb,#B4642A 40%, var(--line))}
 .route1-pts .arw{color:var(--ink-3); font-size:11px}
 .route1-note{margin-top:10px; font-size:12.5px; color:var(--ink-3)}
@@ -532,7 +533,7 @@ footer a{color:var(--ink-2)}
       <div class="daynum"><small>DAY</small>2</div>
       <div class="day-meta">
         <h2>군산 → 완도</h2>
-        <p class="day-route">9/19 토 · 새만금 → 선유도 → 변산 → 영광 백수해안도로 → 목포 → 땅끝 → 완도</p>
+        <p class="day-route">9/19 토 · 새만금 → 선유도 → 변산 → 영광 백수해안도로 → 목포 → <b>카페산정</b> → 땅끝 → 완도</p>
       </div>
       <div class="day-stats">
         <div class="stat"><b>350</b><span>km</span></div>
@@ -541,15 +542,15 @@ footer a{color:var(--ink-2)}
       </div>
     </div>
 
-        <div class="route1" data-route="군산시청&#10;새만금방조제&#10;채석강&#10;백수해안도로&#10;목포시청&#10;땅끝전망대&#10;완도항">
+        <div class="route1" data-route="군산시청&#10;채석강&#10;백수해안도로&#10;목포시청&#10;카페산정 (해남 송지면)&#10;땅끝전망대&#10;완도항">
       <div class="route1-h"><span>하루 경로 — 출발 · 경유 5 · 도착</span><span class="grow"></span>
         <button type="button" class="btn-sm rcopy">경유지 복사</button>
-        <a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.967467,126.736840&amp;vp=35.895083,126.516681&amp;vp2=35.624236,126.466064&amp;vp3=35.363557,126.395949&amp;vp4=34.811831,126.392233&amp;vp5=34.294744,126.525009&amp;ep=34.316309,126.759412&amp;by=car" target="_blank" rel="noopener">카카오맵으로 경로 열기</a>
+        <a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.967467,126.736840&amp;vp=35.624236,126.466064&amp;vp2=35.363557,126.395949&amp;vp3=34.811831,126.392233&amp;vp4=34.366675,126.518765&amp;vp5=34.294744,126.525009&amp;ep=34.316309,126.759412&amp;by=car" target="_blank" rel="noopener">카카오맵으로 경로 열기</a>
         <a class="btn-sm ghost" href="https://map.naver.com/p/directions" target="_blank" rel="noopener">네이버 지도</a>
         <span class="copied"></span>
       </div>
-      <div class="route1-pts"><span class="pt end">군산시청</span><span class="arw">→</span><span class="pt">새만금방조제</span><span class="arw">→</span><span class="pt">채석강</span><span class="arw">→</span><span class="pt">백수해안도로</span><span class="arw">→</span><span class="pt gas">⛽ 목포시청</span><span class="arw">→</span><span class="pt">땅끝전망대</span><span class="arw">→</span><span class="pt end">완도항</span></div>
-      <p class="route1-note"><b>카카오맵 버튼이 원클릭이다</b> — 폰에서 누르면 카카오맵 앱이 열리며 출발·경유5·도착이 한 번에 찍힌다(좌표는 카카오맵에서 확인한 값). PC에서 열면 경유지가 일부 잘려 보인다. 표시되는 거리·시간은 <b>자동차 기준</b>이라 해안 국도로 잡은 이 계획과 다르다. 네이버로 하려면 “경유지 복사”로 이름을 받아 붙여넣는다.</p>
+      <div class="route1-pts"><span class="pt end">군산시청</span><span class="arw">→</span><span class="pt">채석강</span><span class="arw">→</span><span class="pt">백수해안도로</span><span class="arw">→</span><span class="pt gas">⛽ 목포시청</span><span class="arw">→</span><span class="pt cafe">☕ 카페산정</span><span class="arw">→</span><span class="pt">땅끝전망대</span><span class="arw">→</span><span class="pt end">완도항</span></div>
+      <p class="route1-note"><b>카카오맵 버튼이 원클릭이다</b> — 폰에서 누르면 카카오맵 앱이 열리며 출발·경유5·도착이 한 번에 찍힌다(좌표는 카카오맵에서 확인한 값). PC에서 열면 경유지가 일부 잘려 보인다. 표시되는 거리·시간은 <b>자동차 기준</b>이라 해안 국도로 잡은 이 계획과 다르다. 네이버로 하려면 “경유지 복사”로 이름을 받아 붙여넣는다. 경유지 5개가 꽉 차서 <b>새만금방조제는 뺐다</b> — 군산에서 나가는 길에 어차피 지난다.</p>
     </div>
     <div class="leg">
       <div class="leg-h"><span class="dot"></span>주행 — 가장 긴 날</div>
@@ -559,8 +560,9 @@ footer a{color:var(--ink-2)}
         <li class="stop"><span class="time">10:00</span><div class="stop-b"><div class="stop-n">변산 채석강</div><p class="stop-d">부안. 층암절벽 해식지형</p></div><a class="nv" href="https://map.naver.com/p/search/채석강" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
         <li class="stop"><span class="time">14:00</span><div class="stop-b"><div class="stop-n">영광 백수해안도로<span class="tag t-route">서해 BEST</span></div><p class="stop-d">16.8km · 한국의 아름다운 길 100선. 서해안 구간의 하이라이트</p></div><a class="nv" href="https://map.naver.com/p/search/백수해안도로" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
         <li class="stop"><span class="time">15:30</span><div class="stop-b"><div class="stop-n">목포 유달산</div><p class="stop-d">함평·무안 거쳐. 시간 빠듯하면 통과</p></div><a class="nv" href="https://map.naver.com/p/search/목포%20유달산" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
-        <li class="stop"><span class="time">17:00</span><div class="stop-b"><div class="stop-n">해남 땅끝전망대<span class="tag t-view">한반도 최남단</span></div><p class="stop-d">모노레일로 전망대까지. 운영시간 계절별 변동</p></div><a class="nv" href="https://map.naver.com/p/search/땅끝전망대" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
-        <li class="stop"><span class="time">18:00</span><div class="stop-b"><div class="stop-n">완도 도착<span class="tag t-stop">완도대교 확인</span></div><p class="stop-d">막히면 구 13번/77번 국도로 우회</p></div></li>
+        <li class="stop"><span class="time">16:40</span><div class="stop-b"><div class="stop-n">☕ 카페산정 <span class="tag t-view">동료 사촌</span></div><p class="stop-d">해남군 송지면 산정길 65-21 · 010-4826-4703 · 카카오맵 평점 4.9(8건)<br><b>77번국도변, 땅끝 8km 앞</b> — 목포에서 땅끝 가는 길에 그대로 걸린다. 돌아가는 거리는 없다.<br><span class="warn">영업시간은 확인 못 했다.</span> 동료분이 미리 연락해두면 깔끔하다</p></div><a class="nv" href="https://map.naver.com/p/search/해남%20카페산정" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">17:20</span><div class="stop-b"><div class="stop-n">해남 땅끝전망대<span class="tag t-view">한반도 최남단</span></div><p class="stop-d">모노레일로 전망대까지. 운영시간 계절별 변동</p></div><a class="nv" href="https://map.naver.com/p/search/땅끝전망대" target="_blank" rel="noopener"><svg viewBox="0 0 10 13" fill="currentColor"><path d="M5 0C2.2 0 0 2.2 0 5c0 3.6 5 8 5 8s5-4.4 5-8c0-2.8-2.2-5-5-5zm0 6.8A1.8 1.8 0 1 1 5 3.2a1.8 1.8 0 0 1 0 3.6z"/></svg>지도</a></li>
+        <li class="stop"><span class="time">18:30</span><div class="stop-b"><div class="stop-n">완도 도착<span class="tag t-stop">완도대교 확인</span></div><p class="stop-d">막히면 구 13번/77번 국도로 우회</p></div></li>
       </ol>
     </div>
     <div class="leg">
