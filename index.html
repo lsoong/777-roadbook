@@ -206,6 +206,9 @@ section.day{scroll-margin-top:62px; margin-bottom:34px}
 .route1-pts .pt.cafe{background:color-mix(in srgb,#7A4CA8 12%, var(--surface)); border-color:color-mix(in srgb,#7A4CA8 40%, var(--line))}
 .route1-pts .pt.gas{background:color-mix(in srgb,#B4642A 12%, var(--surface)); border-color:color-mix(in srgb,#B4642A 40%, var(--line))}
 .route1-pts .arw{color:var(--ink-3); font-size:11px}
+.kko-legs{list-style:none; margin:10px 0 0; padding:0; display:flex; flex-direction:column; gap:6px}
+.kko-legs li{display:flex; flex-wrap:wrap; align-items:center; gap:4px 8px}
+.kko-legs .kko-via{font-size:11.5px; color:var(--ink-3); line-height:1.4}
 .route1-note{margin-top:10px; font-size:12.5px; color:var(--ink-3)}
 .btn-sm{
   font-family:var(--f-body); font-size:12px; font-weight:700; cursor:pointer; white-space:nowrap;
@@ -665,14 +668,20 @@ footer a{color:var(--ink-2)}
     </div>
 
         <div class="route1" data-route="군산시청&#10;채석강&#10;백수해안도로&#10;서해목포주유소&#10;카페산정 (해남 송지면)&#10;땅끝전망대&#10;완도항">
-      <div class="route1-h"><span>하루 경로 — 출발 · 경유 5 · 도착</span><span class="grow"></span>
+      <div class="route1-h"><span>하루 경로 — 카카오맵 5구간</span><span class="grow"></span>
         <button type="button" class="btn-sm rcopy">경유지 복사</button>
-        <a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.967467,126.736840&amp;vp=35.624236,126.466064&amp;vp2=35.363557,126.395949&amp;vp3=34.815566,126.382582&amp;vp4=34.366675,126.518765&amp;vp5=34.294744,126.525009&amp;ep=34.316309,126.759412&amp;by=car" target="_blank" rel="noopener">카카오맵으로 경로 열기</a>
         <a class="btn-sm ghost" href="https://map.naver.com/p/directions" target="_blank" rel="noopener">네이버 지도</a>
         <span class="copied"></span>
       </div>
       <div class="route1-pts"><span class="pt end">군산시청</span><span class="arw">→</span><span class="pt">채석강</span><span class="arw">→</span><span class="pt">백수해안도로</span><span class="arw">→</span><span class="pt gas">⛽ 서해목포주유소</span><span class="arw">→</span><span class="pt cafe">☕ 카페산정</span><span class="arw">→</span><span class="pt">땅끝전망대</span><span class="arw">→</span><span class="pt end">완도항</span></div>
-      <p class="route1-note"><b>카카오맵 버튼이 원클릭이다</b> — 폰에서 누르면 카카오맵 앱이 열리며 출발·경유5·도착이 한 번에 찍힌다(좌표는 카카오맵에서 확인한 값). PC에서 열면 경유지가 일부 잘려 보인다. <span class="warn"><b>이 링크는 자동차 경로다</b></span> — 고속도로·자동차전용도로를 그대로 태운다(D1 테스트에서 화성TG·수도권제2순환고속도로가 나왔다). <b>동선을 눈으로 보는 용도</b>이고, 실제 주행은 카카오내비를 <b>차량=이륜차</b>로 두고 같은 경유지를 넣어야 한다. 거리·시간도 자동차 기준이라 이 계획과 다르다. 네이버로 하려면 “경유지 복사”로 이름을 받아 붙여넣는다. 경유지 5개가 꽉 차서 <b>새만금방조제는 뺐다</b> — 군산에서 나가는 길에 어차피 지난다.</p>
+      <ol class="kko-legs">
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.967467,126.73684&amp;vp=35.935487,126.526194&amp;vp2=35.820049,126.464642&amp;vp3=35.818142,126.412045&amp;vp4=35.726479,126.531488&amp;ep=35.624236,126.466064&amp;by=car" target="_blank" rel="noopener">① 군산→채석강 · 약 106km</a><span class="kko-via">군산시청 → 비응항 → 신시도 → 선유도 → 가력도항 → 채석강</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.624236,126.466064&amp;vp=35.582588,126.507479&amp;vp2=35.596927,126.613011&amp;ep=35.435808,126.702097&amp;by=car" target="_blank" rel="noopener">② 채석강→고창 · 약 50km</a><span class="kko-via">채석강 → 모항 → 곰소염전 → 고창 광진주유소</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.435808,126.702097&amp;vp=35.33613,126.5722&amp;ep=35.266309,126.497053&amp;by=car" target="_blank" rel="noopener">③ 고창→영광 · 약 36km</a><span class="kko-via">고창 광진주유소 → 고창 대산면 → 영광 서광우리주유소</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.266309,126.497053&amp;vp=35.363557,126.395949&amp;vp2=35.163507,126.353922&amp;vp3=35.04068,126.40164&amp;vp4=34.990404,126.480564&amp;ep=34.815566,126.382582&amp;by=car" target="_blank" rel="noopener">④ 영광→목포 · 약 168km</a><span class="kko-via">영광 서광우리주유소 → 백수해안도로 → 칠산대교 → 현경면 → 무안군청 → 서해목포주유소</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=34.815566,126.382582&amp;vp=34.366675,126.518765&amp;vp2=34.294744,126.525009&amp;vp3=34.354512,126.678237&amp;vp4=34.298562,126.71012&amp;ep=34.330374,126.734079&amp;by=car" target="_blank" rel="noopener">⑤ 목포→완도 · 약 153km</a><span class="kko-via">서해목포주유소 → 카페산정 → 땅끝전망대 → 완도수목원 → 정도리 구계등 → 완도 청해진주유소</span></li>
+      </ol>
+      <p class="route1-note"><b>카카오맵은 위 구간 버튼을 순서대로 누른다</b> — 하루를 주유·식사 지점에서 5구간으로 끊고, 구간마다 경유지를 최대 5개까지 해안도로·옛길 위에 찍어 카카오맵이 고속도로·자동차전용도로로 질러가지 못하게 했다(9/18 오픈스트리트맵 경로로 점검 — 고속도로 0). 버튼 아래 회색 글씨가 그 구간의 경유지다 — 카카오내비(차량=이륜차)에 옮겨 넣을 때 그대로 쓴다. <span class="warn"><b>그래도 자동차 경로다</b></span> — 거리·시간은 자동차 기준 추정치이고, 길안내 중 경로를 벗어나면 재탐색으로 다른 길을 줄 수 있다. 파란 “자동차전용” 표지는 눈으로 확인한다. 완도 입구 <b>완도로 본선(원동→완도읍 12.5km)은 금지</b>라 ⑤에 완도수목원·정도리 구계등을 넣어 서부도로(청해진서로)로 돌린다. 18:10에 완도대교를 못 지나면 ⑤ 대신 13번으로 바로 들어간다(본문 게이트). 네이버로 하려면 “경유지 복사”로 이름을 받아 붙여넣는다.</p>
     </div>
     <div class="leg">
       <div class="leg-h"><span class="dot"></span>주행 — 가장 긴 날</div>
@@ -772,14 +781,22 @@ footer a{color:var(--ink-2)}
     <p class="stop-d" style="margin:14px 0 0;padding:11px 13px;border:1px solid var(--stop);border-radius:10px;background:var(--stop-soft)"><b>🆕 09-17 루트 v5 — 남해읍이 아니라 창원 마산 오동동에서 잔다. 저녁은 아구수육.</b> 사용자 지시(9/17 10:23)로 바꿨다. 남해읍보다 약 50km 더 가야 해서 <b>① 1시간 일찍(06:30) 나가고 ② 녹동항·보성 대한다원을 뺐다.</b> 그 대신 <b>77번은 끝까지 따라간다</b> — 장흥 해안·남열해맞이길·백리섬섬길(오전), <b>남해 섬 77번 → 창선삼천포대교 → 사천 → 고성 동해면 해안 → 동진교</b>(오후). <b>17:55 마산 도착, 일몰 18:25(계산값)까지 약 30분.</b><br>🔴 <b>D5(약 436km)와 함께 이번 여행에서 가장 긴 날이다</b> — D3 약 430km → D4 약 170km(09:00 출발 · 15:15 도착, 회복일) → D5 약 436km(06:00 출발). 오늘은 ① 90분마다 쉬고 ② <b>게이트 4개</b>(A 09:55 벌교 · B 13:15 소호 · C 15:15 남해대교 · D 16:25 사천)를 지키고 ③ 둘 중 한 명이라도 피곤하면 <b>게이트 C에서 남해 섬 안쪽을 뺀다</b>.<br>🔴 <b>🆕 마산 진입 자동차전용 — 남해안대로</b>(국도 2·14·77·79): <b>진전 임곡(호산) 교차로 ~ 진동 신대방 교차로 8.45km</b>와 <b>현동 ~ 양곡(마창대교)</b>. 오픈스트리트맵에 첫 구간 표시가 없어 <b>내비가 태울 수 있다</b>. 동진교 → 진전 → <b>삼진의거대로(옛길) → 진북 → 1002번 해양관광로(구산 해안)</b> → 밤밭고개로 → 마산으로 간다. 여수 → 광양의 <b>엑스포대로·충무공로·이순신대교</b> 금지는 v4 그대로다.<br>🔴 <b>주유 지시(요약)</b> — 완도 청해진 만탱크(9/19 밤) → <b>벌교 태백산맥 만탱크 · 트립 0</b> → <b>여수중앙(소호) 만탱크</b> → <b>진월 에스쁘아 보충</b>(24시) → <b>사천 하나 만탱크 · 트립 0</b>. 아래 주유 칸.</p>
 
         <div class="route1" data-route="완도항&#10;신지명사십리해수욕장&#10;장흥 정남진전망대&#10;태백산맥주유소&#10;고흥우주발사전망대&#10;팔영대교&#10;여수중앙주유소&#10;율촌면사무소&#10;에스쁘아주유소 광양 진월&#10;남해각&#10;창선삼천포대교&#10;사천 하나주유소&#10;고성 동진교&#10;진북면사무소&#10;구산면 유산삼거리&#10;브라운도트 마산오동점">
-      <div class="route1-h"><span>하루 경로 — 출발 · 경유 5 · 도착</span><span class="grow"></span>
+      <div class="route1-h"><span>하루 경로 — 카카오맵 7구간</span><span class="grow"></span>
         <button type="button" class="btn-sm rcopy">경유지 복사</button>
-        <a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=34.316309,126.759412&amp;vp=34.51178,126.97468&amp;vp2=34.847613,127.352229&amp;vp3=34.757251,127.656797&amp;vp4=34.973223,127.746758&amp;vp5=34.95829,128.07266&amp;ep=35.20435,128.58211&amp;by=car" target="_blank" rel="noopener">카카오맵으로 경로 열기</a>
         <a class="btn-sm ghost" href="https://map.naver.com/p/directions" target="_blank" rel="noopener">네이버 지도</a>
         <span class="copied"></span>
       </div>
       <div class="route1-pts"><span class="pt end">완도항</span><span class="arw">→</span><span class="pt">장흥 정남진</span><span class="arw">→</span><span class="pt gas">⛽ 태백산맥주유소</span><span class="arw">→</span><span class="pt gas">⛽ 여수중앙주유소</span><span class="arw">→</span><span class="pt gas">⛽ 진월 에스쁘아</span><span class="arw">→</span><span class="pt gas">⛽ 사천 하나</span><span class="arw">→</span><span class="pt end">마산 오동동</span></div>
-      <p class="route1-note"><b>카카오맵 버튼이 원클릭이다</b> — 경유지가 5개까지라 <b>명사십리·남열·팔영대교·율촌·남해각·창선·동진교·진북·구산은 링크에 없다</b>. “경유지 복사”에는 16곳이 다 들어 있다. <span class="warn"><b>이 링크는 자동차 경로다</b></span> — 여수 → 광양에서 <b>이순신대교·충무공로</b>를, 마산 앞에서 <b>남해안대로</b>를 그대로 태운다. 동선을 눈으로 보는 용도이고, 실제 주행은 카카오내비를 <b>차량=이륜차</b>로 두고 <b>율촌면사무소 · 창선삼천포대교 · 진북면사무소 · 구산면 유산삼거리를 경유지로 꼭 넣는다</b>.</p>
+      <ol class="kko-legs">
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=34.330374,126.734079&amp;vp=34.328267,126.807569&amp;vp2=34.445006,126.830104&amp;vp3=34.511803,126.974725&amp;vp4=34.67746,127.08145&amp;ep=34.847613,127.352229&amp;by=car" target="_blank" rel="noopener">① 완도→벌교 · 약 116km</a><span class="kko-via">완도 청해진주유소 → 명사십리 → 고금대교 → 정남진전망대 → 율포 → 벌교 태백산맥주유소</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=34.847613,127.352229&amp;vp=34.584942,127.492271&amp;vp2=34.631482,127.503192&amp;vp3=34.606624,127.551971&amp;vp4=34.634671,127.562011&amp;vp5=34.69456,127.59725&amp;ep=34.757251,127.656797&amp;by=car" target="_blank" rel="noopener">② 벌교→여수 소호 · 약 94km</a><span class="kko-via">벌교 태백산맥주유소 → 우주발사전망대 → 팔영대교 → 낭도 → 조발도 → 화양면 → 여수중앙주유소</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=34.757251,127.656797&amp;vp=34.79274,127.63248&amp;vp2=34.880931,127.578425&amp;vp3=34.973249,127.581006&amp;vp4=34.99401,127.67912&amp;ep=34.973223,127.746758&amp;by=car" target="_blank" rel="noopener">③ 소호→진월 · 약 53km</a><span class="kko-via">여수중앙주유소 → 소라면사무소 → 율촌면사무소 → 광양읍 → 옥곡면 → 진월 에스쁘아주유소</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=34.973223,127.746758&amp;vp=35.0105,127.76699&amp;vp2=35.03707,127.76998&amp;vp3=35.01015,127.78872&amp;vp4=34.97143,127.85335&amp;ep=34.940762,127.872419&amp;by=car" target="_blank" rel="noopener">④ 진월→남해대교 · 약 29km</a><span class="kko-via">진월 에스쁘아주유소 → 진월교(충무공로) → 섬진강대교 → 신방교(19번) → 하동 금남 → 남해각</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=34.940762,127.872419&amp;vp=34.91925,127.90238&amp;vp2=34.834228,128.000208&amp;vp3=34.857814,128.012096&amp;ep=34.95829,128.07266&amp;by=car" target="_blank" rel="noopener">⑤ 남해대교→사천 · 약 51km</a><span class="kko-via">남해각 → 설천면 → 창선교 → 창선면사무소 → 사천 하나주유소</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=34.95829,128.07266&amp;vp=35.041452,128.42107&amp;vp2=35.0905,128.4265&amp;ep=35.102502,128.418467&amp;by=car" target="_blank" rel="noopener">⑥ 사천→진전 · 약 64km</a><span class="kko-via">사천 하나주유소 → 고성 동해면사무소 → 동진교 → 진전면사무소</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.102502,128.418467&amp;vp=35.10721,128.44932&amp;vp2=35.115019,128.467266&amp;vp3=35.10368,128.5015&amp;vp4=35.11961,128.53875&amp;vp5=35.119601,128.580185&amp;ep=35.20435,128.58211&amp;by=car" target="_blank" rel="noopener">⑦ 진전→마산 · 약 35km</a><span class="kko-via">진전면사무소 → 삼진의거대로 → 진북면사무소 → 1002번 해양관광로 → 1002번 해양관광로 동쪽 → 구산면(유산삼거리 부근) → 마산 오동동</span></li>
+      </ol>
+      <p class="route1-note"><b>카카오맵은 위 구간 버튼을 순서대로 누른다</b> — 하루를 주유·식사 지점에서 7구간으로 끊고, 구간마다 경유지를 최대 5개까지 해안도로·옛길 위에 찍어 카카오맵이 고속도로·자동차전용도로로 질러가지 못하게 했다(9/18 오픈스트리트맵 경로로 점검 — 고속도로 0). 버튼 아래 회색 글씨가 그 구간의 경유지다 — 카카오내비(차량=이륜차)에 옮겨 넣을 때 그대로 쓴다. <span class="warn"><b>그래도 자동차 경로다</b></span> — 거리·시간은 자동차 기준 추정치이고, 길안내 중 경로를 벗어나면 재탐색으로 다른 길을 줄 수 있다. 파란 “자동차전용” 표지는 눈으로 확인한다. ④는 충무공로 <b>마룡 교차로 북쪽 일반도로</b>로 섬진강대교를 건넌다 — 광양만 쪽 4차로(자동차전용)로 안내되면 따르지 않는다. 완도읍→신지대교 들머리는 완도로와 겹칠 수 있어 표지를 눈으로 본다. 네이버로 하려면 “경유지 복사”로 이름을 받아 붙여넣는다.</p>
     </div>
     <div class="leg">
       <div class="leg-h"><span class="dot"></span>주행 — 77번 끝단 → 남해 → 고성 → 마산 · 시각 게이트 4개</div>
@@ -916,14 +933,20 @@ footer a{color:var(--ink-2)}
     <p class="stop-d" style="margin:14px 0 0;padding:11px 13px;border:1px solid var(--stop);border-radius:10px;background:var(--stop-soft)"><b>🆕 09-17 루트 v5 — 마산 오동동에서 출발한다.</b> 남해·사천·고성 구간은 D3로 옮겨 갔다. 그래서 <b>D4는 약 170km, 09:00 출발 · 15:15 울산 동구 도착</b>이다(v4는 326km, 07:00 → 16:50). <b>남해 아침 해안(상주·미조·물미해안도로·독일마을)은 없어졌다.</b> 부산은 09:40~11:35에 지나가기만 하고, 점심은 송정·기장에서 먹는다.<br>🟢 <b>긴 날(D3 약 430km) 다음의 회복일</b>이다. 늦게 나가고 일찍 들어가 <b>D5(06:00 출발 · 436km)를 위해 쉰다</b>. 🆕 여유가 생겨 <b>안민고개(+10km)</b>를 넣을 수 있다(아래 명품 도로).<br>🔴 <b>울산대교·염포산터널은 자동차전용</b>이다. 동구로 들어갈 때 <b>아산로 → 방어진순환도로</b>(지상 고갯길)로 간다. 🆕 마산에서 창원으로 갈 때 <b>마창대교·팔룡터널(창원시도 1호선)</b>도 자동차전용이다.</p>
 
         <div class="route1" data-route="브라운도트 마산오동점&#10;창원 상남셀프주유소&#10;낙동강하굿둑&#10;기장 일광해수욕장&#10;간절곶&#10;울산 무지개주유소 산업로&#10;울산 일산 루이스호텔">
-      <div class="route1-h"><span>하루 경로 — 출발 · 경유 5 · 도착</span><span class="grow"></span>
+      <div class="route1-h"><span>하루 경로 — 카카오맵 5구간</span><span class="grow"></span>
         <button type="button" class="btn-sm rcopy">경유지 복사</button>
-        <a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.20435,128.58211&amp;vp=35.219367,128.680146&amp;vp2=35.1077,128.9466&amp;vp3=35.26109,129.23374&amp;vp4=35.35911,129.36154&amp;ep=35.49302,129.4292&amp;by=car" target="_blank" rel="noopener">카카오맵으로 경로 열기</a>
         <a class="btn-sm ghost" href="https://map.naver.com/p/directions" target="_blank" rel="noopener">네이버 지도</a>
         <span class="copied"></span>
       </div>
       <div class="route1-pts"><span class="pt end">마산 오동동</span><span class="arw">→</span><span class="pt gas">⛽ 창원 상남</span><span class="arw">→</span><span class="pt">낙동강하굿둑</span><span class="arw">→</span><span class="pt">간절곶</span><span class="arw">→</span><span class="pt gas">⛽ 울산 무지개</span><span class="arw">→</span><span class="pt end">울산 루이스호텔</span></div>
-      <p class="route1-note"><b>카카오맵 버튼은 동선을 눈으로 보는 용도다.</b> <span class="warn"><b>이 링크는 자동차 경로라 창원·부산·울산에서 자동차전용도로(마창대교·을숙도대교·울산대교 등)를 태운다</b></span> — 실제 주행은 카카오내비를 <b>차량=이륜차</b>로 두고, 아래 도로명을 따른다.</p>
+      <ol class="kko-legs">
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.20435,128.58211&amp;vp=35.22655,128.60664&amp;ep=35.219367,128.680146&amp;by=car" target="_blank" rel="noopener">① 마산→상남 · 약 14km</a><span class="kko-via">마산 오동동 → 봉암동 → 상남셀프주유소</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.219367,128.680146&amp;vp=35.17009,128.65734&amp;vp2=35.153476,128.66015&amp;vp3=35.14788,128.70704&amp;vp4=35.09938,128.81513&amp;vp5=35.111697,128.869001&amp;ep=35.1077,128.9466&amp;by=car" target="_blank" rel="noopener">② 상남→하굿둑 · 약 48km</a><span class="kko-via">상남셀프주유소 → 진해대로 장복 → 진해역 → 진해대로 → 용원로 → 녹산 → 낙동강하굿둑</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.1077,128.9466&amp;vp=35.107074,129.008807&amp;vp2=35.115553,129.042586&amp;vp3=35.138767,129.071295&amp;vp4=35.14066,129.098052&amp;vp5=35.159181,129.159029&amp;ep=35.177653,129.198583&amp;by=car" target="_blank" rel="noopener">③ 하굿둑→송정 · 약 32km</a><span class="kko-via">낙동강하굿둑 → 대티터널 → 부산역 → 문현동 → 경성대 → 해운대해수욕장 → 송정해수욕장</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.177653,129.198583&amp;vp=35.225,129.229&amp;vp2=35.261085,129.233739&amp;vp3=35.321399,129.267702&amp;vp4=35.328082,129.276559&amp;vp5=35.359212,129.361785&amp;ep=35.383268,129.345742&amp;by=car" target="_blank" rel="noopener">④ 송정→진하 · 약 37km</a><span class="kko-via">송정해수욕장 → 대변항 → 일광해수욕장 → 임랑해수욕장 → 월내역 → 간절곶 → 진하해수욕장</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.383268,129.345742&amp;vp=35.434572,129.314319&amp;vp2=35.541805,129.353882&amp;vp3=35.521835,129.394553&amp;vp4=35.51055,129.40365&amp;vp5=35.4993,129.40821&amp;ep=35.49302,129.4292&amp;by=car" target="_blank" rel="noopener">⑤ 진하→울산 동구 · 약 41km</a><span class="kko-via">진하해수욕장 → 온산읍 → 울산 무지개주유소 → 아산로 → 방어진순환도로 고개 → 방어진순환도로 전하 → 울산 루이스호텔</span></li>
+      </ol>
+      <p class="route1-note"><b>카카오맵은 위 구간 버튼을 순서대로 누른다</b> — 하루를 주유·식사 지점에서 5구간으로 끊고, 구간마다 경유지를 최대 5개까지 해안도로·옛길 위에 찍어 카카오맵이 고속도로·자동차전용도로로 질러가지 못하게 했다(9/18 오픈스트리트맵 경로로 점검 — 고속도로 0). 버튼 아래 회색 글씨가 그 구간의 경유지다 — 카카오내비(차량=이륜차)에 옮겨 넣을 때 그대로 쓴다. <span class="warn"><b>그래도 자동차 경로다</b></span> — 거리·시간은 자동차 기준 추정치이고, 길안내 중 경로를 벗어나면 재탐색으로 다른 길을 줄 수 있다. 파란 “자동차전용” 표지는 눈으로 확인한다. ④ 일광→임랑은 <b>31번 새 우회도로(자동차전용)</b>로 안내될 수 있다 — 일광 교차로에서 파란 표지를 보면 바다 쪽 옛길로. ⑤ 염포산터널 대신 방어진순환도로 고개 위에 경유지를 찍었다. 네이버로 하려면 “경유지 복사”로 이름을 받아 붙여넣는다.</p>
     </div>
     <div class="leg">
       <div class="leg-h"><span class="dot"></span>주행 — 6시간 · 부산은 통과만 · 회복일</div>
@@ -1022,14 +1045,22 @@ footer a{color:var(--ink-2)}
     <p class="stop-d" style="margin:14px 0 0;padding:11px 13px;border:1px solid var(--stop);border-radius:10px;background:var(--stop-soft)"><b>🆕 09-17 루트 v3 반영 — 이번 투어에서 가장 긴 날이다(약 436km, 06:00 → 17:40).</b> 묵호에서 자지 않고 속초까지 간다. <b>호미곶은 뺐고, 헌화로가 D6에서 옮겨 왔다.</b> 기장 옛길은 D4 오후에 이미 지났다.<br>🔴 🆕 <b>D3(약 430km)에 이은 두 번째 긴 날</b>이다 — 사이의 D4(약 170km)에서 쉬고 온다. 게이트가 셋이다 — <b>10:00 포항 출발</b>(늦으면 블루로드 생략) · <b>16:45 강릉 통과</b>(늦으면 주문진·양양 정차 없이 7번 본선) · 삼척 옛길은 한낮에 지나 야간 통과 위험은 없다. 도착하면 일몰(18:24)까지 약 45분 남는다.</p>
 
         <div class="route1" data-route="울산 일산 루이스호텔&#10;문무대왕릉&#10;포항 대성주유소&#10;영덕 강구항&#10;울진 에스에스월변주유소&#10;삼척항&#10;동해 세경주유소&#10;심곡항&#10;속초 등대비치모텔">
-      <div class="route1-h"><span>하루 경로 — 출발 · 경유 5 · 도착</span><span class="grow"></span>
+      <div class="route1-h"><span>하루 경로 — 카카오맵 7구간</span><span class="grow"></span>
         <button type="button" class="btn-sm rcopy">경유지 복사</button>
-        <a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.49302,129.4292&amp;vp=35.738262,129.486877&amp;vp2=36.034525,129.360251&amp;vp3=36.358711,129.391313&amp;vp4=36.98536,129.39718&amp;vp5=37.66588,129.05384&amp;ep=38.21274,128.60016&amp;by=car" target="_blank" rel="noopener">카카오맵으로 경로 열기</a>
         <a class="btn-sm ghost" href="https://map.naver.com/p/directions" target="_blank" rel="noopener">네이버 지도</a>
         <span class="copied"></span>
       </div>
       <div class="route1-pts"><span class="pt end">울산 루이스호텔</span><span class="arw">→</span><span class="pt">문무대왕릉</span><span class="arw">→</span><span class="pt gas">⛽ 포항 대성</span><span class="arw">→</span><span class="pt">영덕 강구항</span><span class="arw">→</span><span class="pt gas">⛽ 울진 월변</span><span class="arw">→</span><span class="pt">헌화로 심곡항</span><span class="arw">→</span><span class="pt end">속초 등대비치</span></div>
-      <p class="route1-note"><b>카카오맵 버튼은 동선을 눈으로 보는 용도다.</b> <span class="warn"><b>자동차 경로라 울산 강동번영로·포항 영일만대로·7번 삼척 본선(자동차전용)을 그대로 태운다</b></span>. 실제 주행은 카카오내비 <b>차량=이륜차</b>로, 아래 이탈 지점을 지킨다. 삼척 옛길은 링크에 없다.</p>
+      <ol class="kko-legs">
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.49302,129.4292&amp;vp=35.570984,129.452806&amp;vp2=35.58993,129.45759&amp;vp3=35.60692,129.45635&amp;vp4=35.616566,129.452245&amp;vp5=35.6299,129.44186&amp;ep=35.738128,129.486875&amp;by=car" target="_blank" rel="noopener">① 울산 동구→문무대왕릉 · 약 39km</a><span class="kko-via">울산 루이스호텔 → 주전몽돌해변 → 동해안로 신명 → 동해안로 강동 → 정자항 → 동해안로 정자북 → 문무대왕릉</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=35.738128,129.486875&amp;vp=35.804239,129.502631&amp;vp2=35.987187,129.555554&amp;ep=36.034525,129.360251&amp;by=car" target="_blank" rel="noopener">② 문무대왕릉→포항 · 약 62km</a><span class="kko-via">문무대왕릉 → 감포항 → 구룡포항 → 포항 대성주유소</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=36.034525,129.360251&amp;vp=36.056032,129.377812&amp;vp2=36.131199,129.396669&amp;vp3=36.200569,129.368486&amp;vp4=36.3585,129.39&amp;vp5=36.509006,129.446816&amp;ep=36.98536,129.39718&amp;by=car" target="_blank" rel="noopener">③ 포항→울진 · 약 131km</a><span class="kko-via">포항 대성주유소 → 영일대해수욕장 → 칠포해수욕장 → 월포해수욕장 → 강구항 → 축산항 → 울진 월변주유소</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=36.98536,129.39718&amp;vp=37.0575,129.4225&amp;vp2=37.10215,129.37325&amp;vp3=37.16977,129.33867&amp;vp4=37.20445,129.33535&amp;vp5=37.24124,129.33877&amp;ep=37.229983,129.342328&amp;by=car" target="_blank" rel="noopener">④ 울진→임원 · 약 50km</a><span class="kko-via">울진 월변주유소 → 죽변항 → 울진북로 나곡 → 삼척로 호산 → 삼척로 원덕 → 삼척로 임원 → 임원항</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=37.229983,129.342328&amp;vp=37.27136,129.31902&amp;vp2=37.288443,129.316025&amp;vp3=37.32969,129.25402&amp;vp4=37.38469,129.2239&amp;vp5=37.41708,129.19503&amp;ep=37.435882,129.19174&amp;by=car" target="_blank" rel="noopener">⑤ 임원→삼척항 · 약 46km</a><span class="kko-via">임원항 → 삼척로 장호 → 장호항 → 삼척로 궁촌 → 삼척로 덕산 → 삼척로 오분 → 삼척항</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=37.435882,129.19174&amp;vp=37.468117,129.169236&amp;vp2=37.548877,129.108791&amp;vp3=37.567099,129.119153&amp;vp4=37.592298,129.08902&amp;vp5=37.652996,129.052292&amp;ep=37.69183,129.032507&amp;by=car" target="_blank" rel="noopener">⑥ 삼척항→정동진 · 약 43km</a><span class="kko-via">삼척항 → 삼척해수욕장 → 묵호 세경주유소 → 어달해변 → 망상해수욕장 → 금진항 → 정동진</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=37.69183,129.032507&amp;vp=37.893,128.8305&amp;vp2=38.020122,128.72355&amp;vp3=38.115634,128.636006&amp;ep=38.21274,128.60016&amp;by=car" target="_blank" rel="noopener">⑦ 정동진→속초 · 약 85km</a><span class="kko-via">정동진 → 주문진항 → 하조대 → 낙산해수욕장 → 속초 숙소</span></li>
+      </ol>
+      <p class="route1-note"><b>카카오맵은 위 구간 버튼을 순서대로 누른다</b> — 하루를 주유·식사 지점에서 7구간으로 끊고, 구간마다 경유지를 최대 5개까지 해안도로·옛길 위에 찍어 카카오맵이 고속도로·자동차전용도로로 질러가지 못하게 했다(9/18 오픈스트리트맵 경로로 점검 — 고속도로 0). 버튼 아래 회색 글씨가 그 구간의 경유지다 — 카카오내비(차량=이륜차)에 옮겨 넣을 때 그대로 쓴다. <span class="warn"><b>그래도 자동차 경로다</b></span> — 거리·시간은 자동차 기준 추정치이고, 길안내 중 경로를 벗어나면 재탐색으로 다른 길을 줄 수 있다. 파란 “자동차전용” 표지는 눈으로 확인한다. ④⑤ 울진 후정 교차로~삼척 오분 교차로는 경유지를 옛길(울진북로·삼척로)에 찍었지만 <b>7번 본선(자동차전용)으로 붙여 안내하는 구간이 남을 수 있다</b> — 후정·오분 교차로 표지를 보고 옛길로. ①은 강동번영로를 피해 주전→정자 동해안로에 경유지 3개를 넣었다. 네이버로 하려면 “경유지 복사”로 이름을 받아 붙여넣는다.</p>
     </div>
     <div class="leg">
       <div class="leg-h"><span class="dot"></span>주행 — 최장거리 · 해 뜨기 전 출발</div>
@@ -1131,14 +1162,21 @@ footer a{color:var(--ink-2)}
     <p class="stop-d" style="margin:14px 0 0;padding:11px 13px;border:1px solid var(--stop);border-radius:10px;background:var(--stop-soft)"><b>🆕 09-17 루트 v3 반영 — 마지막 밤을 속초에서 자서 귀가일이 가벼워졌다.</b> 전에는 약 450km를 달려 06:30에 나가 18:30에 도착했는데, 이제는 <b>약 380km를 07:30에 나가 17:00쯤 도착</b>한다. <b>야간 주행은 없다.</b> 최북단 대진항과 진부령은 그대로 넣었다. <b>추암·헌화로·대포항은 빠졌다</b>(헌화로는 D5로 옮겼다).<br><b>오토바이는 고속도로를 못 탄다</b> — 귀가는 <b>46번 진부령 → 44번 → 6번 국도</b>로 한다. 속초에서 홍천까지 약 212km라 <b>원통 주유가 필수</b>다.<br>🔴 <b>미시령 직행(🅑, 약 320km · 15:30 도착)으로 바꾸려면 속초를 떠나기 전에 정한다.</b> 대진항까지 가면 되돌릴 길이 없다. 숙소가 같아서 9/23 아침에 날씨를 보고 골라도 된다.</p>
 
         <div class="route1" data-route="속초 등대비치모텔&#10;장사항&#10;청간정&#10;화진포&#10;고성 대진항&#10;진부령&#10;원통 동일주유소&#10;홍천 세방주유소&#10;양평주유소&#10;화성시청">
-      <div class="route1-h"><span>하루 경로 — 출발 · 경유 5 · 도착</span><span class="grow"></span>
+      <div class="route1-h"><span>하루 경로 — 카카오맵 6구간</span><span class="grow"></span>
         <button type="button" class="btn-sm rcopy">경유지 복사</button>
-        <a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=38.21274,128.60016&amp;vp=38.26441,128.55836&amp;vp2=38.49978,128.42479&amp;vp3=38.29534,128.36445&amp;vp4=38.1146,128.20188&amp;vp5=37.69277,127.8927&amp;ep=37.199537,126.831477&amp;by=car" target="_blank" rel="noopener">카카오맵으로 경로 열기</a>
         <a class="btn-sm ghost" href="https://map.naver.com/p/directions" target="_blank" rel="noopener">네이버 지도</a>
         <span class="copied"></span>
       </div>
       <div class="route1-pts"><span class="pt end">속초 등대비치</span><span class="arw">→</span><span class="pt">청간정</span><span class="arw">→</span><span class="pt">고성 대진항</span><span class="arw">→</span><span class="pt">진부령</span><span class="arw">→</span><span class="pt gas">⛽ 원통 동일</span><span class="arw">→</span><span class="pt gas">⛽ 홍천 세방</span><span class="arw">→</span><span class="pt end">화성시청</span></div>
-      <p class="route1-note"><b>카카오맵 버튼은 동선을 눈으로 보는 용도다.</b> <span class="warn"><b>자동차 경로라 홍천 이후 서울양양고속도로·중부내륙 등 고속도로를 태울 수 있다</b></span> — 실제 주행은 카카오내비 <b>차량=이륜차</b>로 한다. 양평주유소는 링크에 없다. 도착점 ‘화성시청’은 집 주소로 바꿔 넣는다.</p>
+      <ol class="kko-legs">
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=38.21274,128.60016&amp;vp=38.26435,128.558383&amp;vp2=38.273309,128.549586&amp;vp3=38.315112,128.53507&amp;ep=38.49978,128.42479&amp;by=car" target="_blank" rel="noopener">① 속초→대진항 · 약 42km</a><span class="kko-via">속초 숙소 → 청간정 → 아야진 → 삼포해수욕장 → 대진항</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=38.49978,128.42479&amp;vp=38.378353,128.467126&amp;vp2=38.265012,128.359027&amp;ep=38.1146,128.20188&amp;by=car" target="_blank" rel="noopener">② 대진항→원통 · 약 67km</a><span class="kko-via">대진항 → 간성읍 → 진부령 → 원통 동일주유소</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=38.1146,128.20188&amp;vp=38.070295,128.172358&amp;vp2=37.807079,127.989228&amp;ep=37.69277,127.8927&amp;by=car" target="_blank" rel="noopener">③ 원통→홍천 · 약 60km</a><span class="kko-via">원통 동일주유소 → 인제읍 → 철정 → 홍천 세방주유소</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=37.69277,127.8927&amp;ep=37.496652,127.482733&amp;by=car" target="_blank" rel="noopener">④ 홍천→양평 · 약 50km</a><span class="kko-via">홍천 세방주유소 → 양평주유소</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=37.496652,127.482733&amp;vp=37.45878,127.3256&amp;vp2=37.405854,127.262198&amp;vp3=37.233,127.206&amp;vp4=37.14055,127.199814&amp;ep=37.127107,127.15502&amp;by=car" target="_blank" rel="noopener">⑤ 양평→남사 · 약 75km</a><span class="kko-via">양평주유소 → 퇴촌 → 광주 경안동 → 용인 김량장 → 용인 이동 → 남사읍</span></li>
+        <li><a class="btn-sm kko" href="https://m.map.kakao.com/scheme/route?sp=37.127107,127.15502&amp;vp=37.149855,127.077485&amp;vp2=37.129402,126.932516&amp;vp3=37.150484,126.885764&amp;ep=37.199537,126.831477&amp;by=car" target="_blank" rel="noopener">⑥ 남사→화성 · 약 44km</a><span class="kko-via">남사읍 → 오산시청 → 향남읍 → 팔탄면 → 화성시청</span></li>
+      </ol>
+      <p class="route1-note"><b>카카오맵은 위 구간 버튼을 순서대로 누른다</b> — 하루를 주유·식사 지점에서 6구간으로 끊고, 구간마다 경유지를 최대 5개까지 해안도로·옛길 위에 찍어 카카오맵이 고속도로·자동차전용도로로 질러가지 못하게 했다(9/18 오픈스트리트맵 경로로 점검 — 고속도로 0). 버튼 아래 회색 글씨가 그 구간의 경유지다 — 카카오내비(차량=이륜차)에 옮겨 넣을 때 그대로 쓴다. <span class="warn"><b>그래도 자동차 경로다</b></span> — 거리·시간은 자동차 기준 추정치이고, 길안내 중 경로를 벗어나면 재탐색으로 다른 길을 줄 수 있다. 파란 “자동차전용” 표지는 눈으로 확인한다. ⑤⑥ 화성 진입은 신중부대로·봉영로·43번(봉담~의왕)·비봉을 피해 광주→용인 김량장→이동→남사→오산→향남→팔탄으로 돌렸다. 본문에도 도로명 단위로는 확정되지 않은 구간이라 추석 전날 정체 때 이륜차 모드 내비와 비교한다. 네이버로 하려면 “경유지 복사”로 이름을 받아 붙여넣는다.</p>
     </div>
     <div class="leg">
       <div class="leg-h"><span class="dot"></span>오전 — 북쪽 끝 찍고 진부령</div>
